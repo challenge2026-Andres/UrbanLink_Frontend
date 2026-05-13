@@ -54,3 +54,91 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600; 
     margin-bottom: 1rem;
 }
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15rem;
+    width: 100%;
+    background-color: var(--color-blue-primary);
+    position: relative;
+}
+
+/* logo na navbar */
+.logo img {
+    height: auto;
+    max-height: 80px;
+}
+
+
+/* links de navegacao entre paginas */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    transition: 0.3s ease;
+    opacity: 0.6;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#active_link {
+    text-decoration: underline;
+    text-decoration-color: var(--color-text-light);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    opacity: 1;
+}
+
+
+/* botoes navbar */
+.nav-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-buttons button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease
+}
+
+#btn-cadastro {
+    background-color: var(--color-text-light);
+    color: var(--color-blue-primary);
+    border: 1px solid var(--color-text-light);
+}
+
+#btn-cadastro:hover {
+    opacity: 0.9;
+    transform: translateY(-1px); 
+}
+
+#btn-entrar {
+    background-color: transparent;
+    color: var(--color-text-light); 
+    border: 1px solid var(--color-text-light);
+}
+
+#btn-entrar:hover {
+    background-color: var(--color-text-light);
+    color: var(--color-blue-primary);   
+    transform: translateY(-1px);        
+}

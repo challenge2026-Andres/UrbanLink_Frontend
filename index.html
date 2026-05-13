@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Estilos padrao -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Estilos pagina index.html -->
+     <link rel="stylesheet" href="css/index.css">
 
     <!-- Google fonts: Poppins e Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,11 +23,11 @@
   <body>
     <nav>
       <a class="logo" href="index.html">
-        <img src="assets/logo_UrbanLink.svg" alt="logo da UrbanLink" />
+        <img src="assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
       </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" id="active_link">Home</a></li>
         <li><a href="pages/quemSomos.html">Quem Somos</a></li>
         <li><a href="pages/sobre.html">Sobre</a></li>
         <li><a href="pages/faq.html">FAQ</a></li>
@@ -30,8 +35,8 @@
       </ul>
 
       <div class="nav-buttons">
-        <button>Cadastre-se</button>
-        <button>Entre</button>
+        <button id="btn-cadastro">Cadastre-se</button>
+        <button id="btn-entrar">Entre</button>
       </div>
     </nav>
 
