@@ -1,0 +1,56 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* VARIÁVEIS DE TEMA (:root) */
+:root {
+    /* Paleta de Cores Primárias */
+    --color-green-light: #8cc63f; 
+    --color-green-primary: #4ab24a; 
+    --color-blue-primary: #1e88e5;
+    --color-blue-dark: #1565c0;
+
+    /* Cores de Fundo */
+    --color-bg-main: #f8f9fa; /* Fundo geral da página */
+    --color-bg-card: #ffffff; /* Fundo para cards */
+    --color-bg-dark: #121212; /* Fundo para footer */
+
+    /* Cores de Texto */
+    --color-text-main: #333333; /* Texto principal */
+    --color-text-muted: #666666; /* Texto secundário */
+    --color-text-light: #ffffff; /* Texto sobre fundos escuros */
+
+    /* Cores de Feedback / Ações */
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+
+    /* Tipografia */
+    --font-text: 'Inter', sans-serif; /* Para parágrafos e textos gerais */
+    --font-title: 'Poppins', sans-serif; /* Para títulos e destaques */
+    --font-size-base: 16px;
+}
+
+body {
+    /* Aplicando a fonte Inter no site inteiro por padrão */
+    font-family: var(--font-text);
+    font-size: var(--font-size-base);
+    color: var(--color-text-main);
+    background-color: var(--color-bg-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* aplicando a fonte Poppins somente nos títulos */
+    font-family: var(--font-title);
+    color: var(--color-text-main);
+    font-weight: 600; 
+    margin-bottom: 1rem;
+}
