@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/logo_UrbanLink_branca.svg"
+    />
 
     <!-- Estilos padrao -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -35,17 +40,18 @@
       </ul>
 
       <div class="nav-buttons">
-        <button id="btn-cadastro">Cadastre-se</button>
-        <button id="btn-entrar">Entre</button>
+        <button class="btn-branco">Cadastre-se</button>
+        <button class="btn-vazado">Entre</button>
       </div>
     </nav>
 
     <header>
       <div class="texto-header">
-        <h2>A revolução na mobilidade sustentável da cidade.</h2>
+        <h1>Seus pontos SoulUp virando mobilidade real.</h1>
         <p>
-          Tecnologia, comunidades integradas e recompensas com impacto real. No
-          UrbanLink, sua rotina gera valor para você e para o planeta.
+          O UrbanLink conecta engajamento sustentável a benefícios concretos no
+          transporte público. Acumule pontos, troque por vouchers e acompanhe o
+          impacto positivo das suas escolhas na cidade.
         </p>
       </div>
       <div class="logo-header">
@@ -55,67 +61,71 @@
     <main>
       <section class="como-funciona">
         <h2>Como o UrbanLink funciona</h2>
-        <p>
+        <p id="subtitulo-como-funciona">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
           provident.
         </p>
 
+        <!-- futuramente usar/se inspirar em cards do site mercado livre sustentavel e site da soul up -->
         <div class="cards-container">
-          <article class="card">
+          <div class="card">
             <h3>Conecte</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              explicabo vel quas!
+              explicabo vel quas! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Id explicabo vel quas!
             </p>
-          </article>
+          </div>
 
-          <article class="card">
+          <div class="card">
             <h3>Engaje</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              explicabo vel quas!
+              explicabo vel quas! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Id explicabo vel quas!
             </p>
-          </article>
+          </div>
 
-          <article class="card">
+          <div class="card">
             <h3>Transforme</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              explicabo vel quas!
+              explicabo vel quas! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Id explicabo vel quas!
             </p>
-          </article>
+          </div>
         </div>
       </section>
 
       <section class="cta-section">
-        <h2>Faça parte da mobilidade do futuro</h2>
+        <h2>Mobilidade sustentável também pode ser recompensa.</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat,
-          soluta.
+          O UrbanLink propõe um modelo evolutivo: primeiro com vouchers digitais
+          de transporte e, futuramente, com integração direta a sistemas de
+          bilhetagem urbana.
         </p>
-        <button class="btn-primary">Saiba mais sobre a solução</button>
+        <button class="btn-vazado">Conheça a solução</button>
       </section>
     </main>
 
     <footer>
       <div class="footer-container">
-        <div class="footer-info">
-          <img src="assets/logo_UrbanLink.svg" alt="logo da UrbanLink" />
-          <p>Trazendo sustentabilidade para a sua jornada diária.</p>
-        </div>
-
         <div class="footer-links">
           <h4>Navegação</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
+          <ul class="footer-ul">
+            <li><a href="index.html" id="active_link_footer">Home</a></li>
             <li><a href="pages/quemSomos.html">Quem Somos</a></li>
             <li><a href="pages/sobre.html">Sobre</a></li>
             <li><a href="pages/faq.html">FAQ</a></li>
             <li><a href="pages/contato.html">Contato</a></li>
           </ul>
         </div>
+        <div class="footer-info">
+          <img src="assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
+          <p>Trazendo sustentabilidade para a sua jornada diária.</p>
+        </div>
       </div>
-
+      <hr />
       <div class="footer-bottom">
         <p>&copy; 2026 UrbanLink</p>
         <p>Todos os direitos reservados.</p>

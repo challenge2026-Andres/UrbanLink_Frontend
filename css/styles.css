@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     min-height: 100vh;
 }
@@ -13,20 +14,26 @@ html, body {
 /* VARIÁVEIS DE TEMA (:root) */
 :root {
     /* Paleta de Cores Primárias */
-    --color-green-light: #8cc63f; 
-    --color-green-primary: #4ab24a; 
+    --color-green-light: #8cc63f;
+    --color-green-primary: #4ab24a;
     --color-blue-primary: #1e88e5;
     --color-blue-dark: #1565c0;
 
     /* Cores de Fundo */
-    --color-bg-main: #f8f9fa; /* Fundo geral da página */
-    --color-bg-card: #ffffff; /* Fundo para cards */
-    --color-bg-dark: #121212; /* Fundo para footer */
+    --color-bg-main: #f8f9fa;
+    /* Fundo geral da página */
+    --color-bg-card: #ffffff;
+    /* Fundo para cards */
+    --color-bg-dark: #121212;
+    /* Fundo para footer */
 
     /* Cores de Texto */
-    --color-text-main: #333333; /* Texto principal */
-    --color-text-muted: #666666; /* Texto secundário */
-    --color-text-light: #ffffff; /* Texto sobre fundos escuros */
+    --color-text-main: #333333;
+    /* Texto principal */
+    --color-text-muted: #666666;
+    /* Texto secundário */
+    --color-text-light: #ffffff;
+    /* Texto sobre fundos escuros */
 
     /* Cores de Feedback / Ações */
     --color-success: #28a745;
@@ -34,9 +41,14 @@ html, body {
     --color-danger: #dc3545;
 
     /* Tipografia */
-    --font-text: 'Inter', sans-serif; /* Para parágrafos e textos gerais */
-    --font-title: 'Poppins', sans-serif; /* Para títulos e destaques */
-    --font-size-base: 16px;
+    --font-text: 'Inter', sans-serif;
+    /* Para parágrafos e textos gerais */
+    --font-title: 'Poppins', sans-serif;
+    /* Para títulos e destaques */
+    --font-size-base: 20px;
+    --font-size-title: 3rem;
+    --font-size-subtitle: 1.1rem;
+    --font-size-title-card: 2rem;
 }
 
 body {
@@ -47,12 +59,23 @@ body {
     background-color: var(--color-bg-main);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     /* aplicando a fonte Poppins somente nos títulos */
     font-family: var(--font-title);
     color: var(--color-text-main);
-    font-weight: 600; 
+    font-weight: 600;
     margin-bottom: 1rem;
+}
+
+/* padding dos sections, header, etc */
+header,
+section {
+    padding: 4rem 10rem;
 }
 
 /* Navbar */
@@ -61,7 +84,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 10rem;
-    width: 100%; 
+    width: 100%;
     background-color: var(--color-blue-primary);
     position: relative;
 }
@@ -106,12 +129,12 @@ a:hover {
 }
 
 /* botoes navbar */
-.nav-buttons{
+.nav-buttons {
     display: flex;
     gap: 1rem;
 }
 
-.nav-buttons button {
+button {
     padding: 0.7rem 1.5rem;
     border-radius: 50px;
     font-size: 1rem;
@@ -120,25 +143,93 @@ a:hover {
     transition: 0.3s ease
 }
 
-#btn-cadastro {
+.btn-branco {
     background-color: var(--color-text-light);
     color: var(--color-blue-primary);
     border: 1px solid var(--color-text-light);
 }
 
-#btn-cadastro:hover {
+.btn-branco:hover {
     opacity: 0.9;
-    transform: translateY(-1px); 
+    transform: translateY(-1px);
 }
 
-#btn-entrar {
+.btn-vazado {
     background-color: transparent;
-    color: var(--color-text-light); 
+    color: var(--color-text-light);
     border: 1px solid var(--color-text-light);
 }
 
-#btn-entrar:hover {
+.btn-vazado:hover {
     background-color: var(--color-text-light);
-    color: var(--color-blue-primary);   
-    transform: translateY(-1px);        
+    color: var(--color-blue-primary);
+    transform: translateY(-1px);
+}
+
+/* footer */
+
+footer {
+    background-color: #000;
+    color: var(--color-text-light);
+    padding: 3rem 10rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-links h4 {
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.footer-ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-ul a {
+
+    text-decoration: none;
+    color: var(--color-text-light);
+    transition: 0.3s ease;
+    opacity: 0.7;
+
+}
+
+.footer-ul a:hover {
+    opacity: 1;
+}
+
+#active_link_footer {
+    text-decoration: underline;
+    text-decoration-color: var(--color-text-light);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    opacity: 1;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+}
+
+.footer-info img {
+    max-height: 80px;
+}
+
+footer hr {
+    margin: 2rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 16px;
 }
