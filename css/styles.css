@@ -154,6 +154,17 @@ button {
     transform: translateY(-1px);
 }
 
+.btn-azul {
+    background-color: var(--color-blue-primary);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-blue-primary);
+}
+
+.btn-azul:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
 .btn-vazado {
     background-color: transparent;
     color: var(--color-text-light);
