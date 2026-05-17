@@ -46,45 +46,115 @@ header {
 
 /* section como funciona */
 .como-funciona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
+    padding: 5rem 0 5rem 10rem;
+    overflow: hidden;
 }
 
-.como-funciona h2,
-#subtitulo-como-funciona {
-    text-align: center;
+.como-funciona-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
 }
 
-.como-funciona h2 {
-    font-size: var(--font-size-title);
-}
-
-#subtitulo-como-funciona {
+.como-funciona-tabs span {
     font-size: var(--font-size-subtitle);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-text-main);
 }
 
-/* cards */
+.tab {
+    border: 1px solid #00000027;
+    background-color: var(--color-bg-card);
+    color: var(--color-text-muted);
+    padding: 0.45rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+}
+
+.tab.active {
+    background-color: color-mix(in srgb, var(--color-green-primary) 18%, white);
+    border-color: var(--color-green-primary);
+    color: var(--color-text-main);
+}
 
 .cards-container {
     display: flex;
-    gap: 1rem;
-    padding: 4rem 0;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 0.5rem ;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
+    min-height: 500px;
+    min-width: 800px;
+    border-radius: 22px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
     background-color: var(--color-bg-card);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    padding: 3rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+.card-content {
+    width: 50%;
 }
 
 .card h3 {
-    color: var(--color-green-primary);
-    font-weight: bold;
     font-size: var(--font-size-title-card);
+    margin-bottom: 1rem;
+    color: var(--color-text-main);
 }
 
 .card p {
-    color: var(--color-text-muted);
+    font-size: var(--font-size-subtitle);
+    color: var(--color-text-main);
+    margin-bottom: 2rem;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.card-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 0;
+    border-top: 1px solid #00000027;
+    color: var(--color-text-main);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.card-links a::after {
+    content: "→";
+    font-size: 1rem;
+}
+
+.card-links a:hover {
+    padding-left: 0.4rem;
+    opacity: 0.75;
+}
+
+.card-img img {
+    max-width: 300px;
 }
 
 /* section call to action */
