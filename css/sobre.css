@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 5rem 0 5rem 10rem;
     overflow: hidden;
 }
@@ -136,24 +136,48 @@
 .colorCard-3{background-color: #E1F5EE;}
 .colorCard-4{background-color: #FAEEDA;}
 
-.cta-section {
-    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
-    color: var(--color-text-light);
-    text-align: center;
-    padding: 5rem 2rem;
-    min-height: 100vh;
+.stats-section {
+  padding: 5rem 10rem 5rem 10rem;
+  background: linear-gradient(-135deg,var(--color-blue-primary),var(--color-green-primary));
 }
 
-.cta-section h2 {
-    font-size: var(--font-size-title);
-    margin-bottom: 1rem;
-    color: var(--color-text-light);
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
-.cta-section p {
-    font-size: var(--font-size-subtitle);
-    line-height: 1.6;
-    opacity: 0.9;
-    max-width: 650px;
-    margin: 0 auto 2.5rem auto;
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-section h2 {
+  color: white ;
+}
+
+.stat-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+
+  background: linear-gradient(
+    -135deg,
+    var(--color-blue-primary),
+    var(--color-green-primary)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-card p {
+  color: #555;
+  line-height: 1.5;
 }
