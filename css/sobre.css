@@ -154,7 +154,7 @@
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .stat-card:hover {
@@ -168,27 +168,19 @@
 .stat-card h3 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-
-  background: linear-gradient(
-    -135deg,
-    var(--color-blue-primary),
-    var(--color-green-primary)
-  );
+  background: linear-gradient(-135deg,var(--color-blue-primary),var(--color-green-primary));
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .stat-card p {
-  color: #555;
-  line-height: 1.5;
+  color: #535353;
 }
 
 /* linha do tempo */
-
 .timeline-section {
     padding: 5rem 10rem 5rem 10rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,7 +227,7 @@
     display: block;
     position: relative;
     outline: none;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 
 .timeline-item:last-child {
@@ -269,7 +261,7 @@
     padding: 24px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     border: 1px solid #f0f0f0;
-    transition: all 0.3s ease;
+    transition:0.3s;
 }
 
 .timeline-card h3 {
@@ -379,4 +371,50 @@
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* sessao Call to Action (CTA Final) */
+.cta-container {
+    background: linear-gradient(135deg, var(--color-blue-primary, #0066cc), var(--color-green-primary, #28a745));
+    width: 100%;
+    padding: 2rem 10rem 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-text-content {
+    color: #ffffff;
+}
+
+.cta-text-content h2 {
+  color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.cta-text-content p {
+    font-size: 1.05rem;
+}
+
+.cta-button {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    transform: translateY(0);
 }
