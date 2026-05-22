@@ -124,7 +124,7 @@
 }
 .card-img{
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 20px;
 
 }
 .card-img img {
@@ -180,6 +180,7 @@
 
 /* linha do tempo */
 .timeline-section {
+  min-height: 80vh;
     padding: 5rem 10rem 5rem 10rem;
     display: flex;
     flex-direction: column;
