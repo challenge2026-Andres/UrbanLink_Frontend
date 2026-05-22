@@ -136,6 +136,8 @@
 .colorCard-3{background-color: #E1F5EE;}
 .colorCard-4{background-color: #FAEEDA;}
 
+
+/* Cards o problema que resolvemos */
 .stats-section {
   padding: 5rem 10rem 5rem 10rem;
   background: linear-gradient(-135deg,var(--color-blue-primary),var(--color-green-primary));
@@ -180,4 +182,230 @@
 .stat-card p {
   color: #555;
   line-height: 1.5;
+}
+
+/* linha do tempo */
+
+/* ==========================================================================
+   Layout Base da Linha do Tempo Interativa
+   ========================================================================== */
+
+.timeline-section {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.timeline-section h2#timeline-title {
+    width: 100%;
+    max-width: 1200px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #0c1a30;
+}
+
+/* Container que divide a tela em duas colunas */
+.timeline-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide meio a meio */
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: start;
+}
+
+/* ==========================================================================
+   Coluna Esquerda - Botões da Linha do Tempo
+   ========================================================================== */
+
+.timeline {
+    position: relative;
+    padding-left: 45px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: linear-gradient(var(--color-blue-primary, #0066cc), var(--color-green-primary, #28a745));
+}
+
+/* Transformando os itens em botões clicáveis sem aparência de botão padrão */
+.timeline-item {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:hover {
+    transform: translateX(4px);
+}
+
+/* Badge / Bolinha lateral */
+.timeline-badge {
+    position: absolute;
+    left: -45px;
+    top: 25px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid var(--color-blue-primary, #0066cc);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:last-child .timeline-badge {
+    border-color: var(--color-green-primary, #28a745);
+}
+
+/* Estilo do Card padrão */
+.timeline-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.timeline-card h3 {
+    font-size: 1.2rem;
+    color: #0c1a30;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.timeline-card p {
+    font-size: 0.9rem;
+    color: #718096;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Corta o texto com "..." na linha do tempo para instigar o clique */
+}
+
+/* Tags internas dos cards */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e8f4fd;
+    color: #0066cc;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+/* --- Estado Ativo (O Card que está selecionado) --- */
+.timeline-item.active .timeline-card {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: var(--color-blue-primary, #0066cc);
+    background-color: #fafbfc;
+}
+
+.timeline-item.active .timeline-badge {
+    background-color: var(--color-blue-primary, #0066cc);
+    scale: 1.2;
+}
+
+.timeline-item:last-child.active .timeline-badge {
+    background-color: var(--color-green-primary, #28a745);
+}
+
+
+/* ==========================================================================
+   Coluna Direita - Painel Explicativo Fixo/Flutuante
+   ========================================================================== */
+
+.timeline-detail-panel {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eef2f5;
+    position: sticky; /* Faz o painel seguir o scroll da tela se a seção for longa */
+    top: 40px;
+    min-height: 400px;
+}
+
+/* Esconder os painéis desativados */
+.detail-content {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+/* Mostrar o painel ativo */
+.detail-content.active {
+    display: block;
+}
+
+/* Estilização interna do texto detalhado */
+.detail-tag {
+    color: var(--color-blue-primary, #0066cc);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.detail-content h2 {
+    font-size: 1.8rem;
+    color: #0c1a30;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.detail-content .lead {
+    font-size: 1.1rem;
+    color: #4a5568;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.detail-content p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.detail-content ul {
+    padding-left: 20px;
+    color: #4a5568;
+}
+
+.detail-content li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Animação de transição suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
