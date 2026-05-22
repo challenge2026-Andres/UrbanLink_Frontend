@@ -1,0 +1,16 @@
+.sobre-header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-card);
+
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.sobre-header img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}

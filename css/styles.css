@@ -291,3 +291,17 @@ footer hr {
     text-align: center;
     font-size: 16px;
 }
+
+.caixa-destacada{
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem;
+    font-size: small;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.4);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
