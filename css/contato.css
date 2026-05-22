@@ -1,0 +1,163 @@
+.contato-main {
+    background-color: var(--color-bg-main);
+    min-height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+}
+
+.contato-section {
+    background-color: var(--color-bg-card);
+    width: 100%;
+    max-width: 700px;
+    padding: 3rem;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.contato-intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contato-intro h1 {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-text-main);
+    font-size: var(--font-size-title);
+    margin-bottom: 1rem;
+}
+
+.contato-intro p {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-paragraph);
+    line-height: 1.6;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text-main);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: "Inter", sans-serif;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid #00000027;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-main);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-blue-primary);
+    box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.15);
+    background-color: var(--color-bg-card);
+}
+
+.error-message {
+    font-family: "Inter", sans-serif;
+    color: var(--color-error);
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-weight: 500;
+    min-height: 1rem;
+}
+
+.btn-submit {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-blue-dark));
+    color: var(--color-text-light);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(30, 136, 229, 0.3);
+}
+
+.feedback-box {
+    font-family: "Inter", sans-serif;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.feedback-box.success {
+    display: block;
+    background-color: #eef8e6;
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+.feedback-box.error {
+    display: block;
+    background-color: #fde8e8;
+    color: var(--color-error);
+    border: 1px solid var(--color-error);
+}
+
+@media (max-width: 1024px) {
+    .contato-main {
+        padding: 4rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contato-main {
+        padding: 3rem 2rem;
+    }
+    
+    .contato-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato-main {
+        padding: 2rem 1rem;
+    }
+
+    .contato-section {
+        padding: 1.5rem 1.2rem;
+        border-radius: 20px;
+    }
+
+    .contato-intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.8rem 1rem;
+    }
+}
