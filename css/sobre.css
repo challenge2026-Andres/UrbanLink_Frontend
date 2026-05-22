@@ -135,3 +135,25 @@
 .colorCard-2{background-color: #EAF3DE;}
 .colorCard-3{background-color: #E1F5EE;}
 .colorCard-4{background-color: #FAEEDA;}
+
+.cta-section {
+    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+
+.cta-section h2 {
+    font-size: var(--font-size-title);
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+}
+
+.cta-section p {
+    font-size: var(--font-size-subtitle);
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+}
