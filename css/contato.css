@@ -1,0 +1,36 @@
+.contato-main {
+    background-color: var(--color-bg-main);
+    min-height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+}
+
+.contato-section {
+    background-color: var(--color-bg-card);
+    width: 100%;
+    max-width: 700px;
+    padding: 3rem;
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.contato-intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contato-intro h1 {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-text-main);
+    font-size: var(--font-size-title);
+    margin-bottom: 1rem;
+}
+
+.contato-intro p {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-paragraph);
+    line-height: 1.6;
+}
