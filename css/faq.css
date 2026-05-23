@@ -7,8 +7,8 @@ header {
 }
 
 .texto-header {
-    flex: 1;
-    color: var(--color-text-light);
+    text-align: center;
+    padding-top: 0rem;
 }
 
 .texto-header h1 {
@@ -34,4 +34,31 @@ header {
     width: 100%;
     max-width: 350px;
     height: auto;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    width: 500px;
+}
+
+.accordion{
+    background-color: fff;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    
 }
