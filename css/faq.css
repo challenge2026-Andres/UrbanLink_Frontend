@@ -92,3 +92,96 @@
     color: var(--color-text-light);
     transform: rotate(45deg);
 }
+
+/* RESPONSIVIDADE FAQ */
+
+/* Notebook menor */
+@media (max-width: 1200px) {
+    .faq-section {
+        padding: 5rem 4rem;
+    }
+
+    .faq-list {
+        max-width: 850px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .faq-section {
+        padding: 4rem 2rem;
+    }
+
+    .faq-intro {
+        margin-bottom: 2.5rem;
+    }
+
+    .faq-intro h2 {
+        font-size: var(--font-size-title);
+    }
+
+    .faq-list {
+        max-width: 100%;
+    }
+
+    .faq-question {
+        padding: 1.2rem 1.4rem;
+        font-size: 1rem;
+    }
+
+    .faq-answer p {
+        padding: 0 1.4rem 1.2rem;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .faq-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .faq-intro {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .faq-intro h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .faq-intro p {
+        font-size: 1rem;
+    }
+
+    .faq-list {
+        gap: 0.8rem;
+    }
+
+    .faq-card {
+        border-radius: 14px;
+    }
+
+    .faq-question {
+        padding: 1rem;
+        font-size: 0.95rem;
+        gap: 1rem;
+    }
+
+    .faq-question span {
+        width: 28px;
+        height: 28px;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    .faq-answer p {
+        padding: 0 1rem 1rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .faq-card.active .faq-answer {
+        max-height: 260px;
+    }
+}
