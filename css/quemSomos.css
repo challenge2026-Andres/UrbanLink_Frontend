@@ -221,3 +221,7 @@ header {
     line-height: 1.7;
     margin: 0;
 }
+
+nav {
+    background: transparent;
+}
