@@ -81,24 +81,10 @@
     min-height: 1rem;
 }
 
-.btn-submit {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-blue-dark));
-    color: var(--color-text-light);
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 14px;
-    cursor: pointer;
+#btn-enviar {
     width: 100%;
-    transition: 0.3s ease;
-    margin-top: 1rem;
-}
-
-.btn-submit:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(30, 136, 229, 0.3);
+    background: linear-gradient(-145deg, var(--color-blue-primary), var(--color-green-primary));
+    border: none;
 }
 
 .feedback-box {
@@ -135,7 +121,7 @@
     .contato-main {
         padding: 3rem 2rem;
     }
-    
+
     .contato-section {
         padding: 2rem;
     }
