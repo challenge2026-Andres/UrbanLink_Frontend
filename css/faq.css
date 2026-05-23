@@ -36,20 +36,28 @@ header {
     height: auto;
 }
 
-
 .faq-item {
-    margin: 1rem 0;
+    margin: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 details {
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
+    border: 2px solid var(--color-blue-primary);
+    margin-bottom: 1rem;
 }
 
 summary {
     cursor: pointer;
     font-weight: bold;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 details p {
