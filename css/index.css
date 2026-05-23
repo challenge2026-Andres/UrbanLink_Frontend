@@ -360,3 +360,190 @@
     opacity: 0.85;
     margin: 0;
 }
+
+/* RESPONSIVIDADE HOME */
+
+/* Notebook menor */
+@media (max-width: 1200px) {
+    .como-funciona {
+        padding: 5rem 0 5rem 4rem;
+    }
+
+    .cards-container {
+        padding-right: 4rem;
+    }
+
+    .card {
+        min-width: 680px;
+    }
+
+    .card-img img {
+        max-width: 180px;
+    }
+
+    .deashboard-simulacao-section,
+    .seguranca-section,
+    .cta-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .seguranca-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .como-funciona {
+        min-height: auto;
+        padding: 4rem 0 4rem 2rem;
+    }
+
+    .como-funciona-tabs {
+        padding-right: 2rem;
+    }
+
+    .cards-container {
+        padding: 1rem 2rem 1rem 0;
+    }
+
+    .card {
+        min-width: 85vw;
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .card-img {
+        align-self: flex-end;
+    }
+
+    .card-img img {
+        max-width: 150px;
+    }
+
+    .deashboard-simulacao-section {
+        min-height: auto;
+        flex-direction: column;
+        padding: 4rem 2rem;
+        gap: 2rem;
+    }
+
+    .dashboard-text,
+    .dashboard-card {
+        width: 100%;
+    }
+
+    .seguranca-section {
+        min-height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .seguranca-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section {
+        min-height: auto;
+        padding: 4rem 2rem;
+        gap: 2.5rem;
+    }
+
+    .cta-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .como-funciona {
+        padding: 3rem 0 3rem 1.5rem;
+    }
+
+    .como-funciona-tabs {
+        gap: 0.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .como-funciona-tabs span {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .tab {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.65rem;
+    }
+
+    .cards-container {
+        gap: 1rem;
+        padding: 1rem 1.5rem 1rem 0;
+    }
+
+    .card {
+        min-width: 88vw;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .card p {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-links a {
+        font-size: 0.8rem;
+    }
+
+    .card-img {
+        padding: 1.5rem;
+    }
+
+    .card-img img {
+        max-width: 120px;
+    }
+
+    .deashboard-simulacao-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .dashboard-card {
+        padding: 1.5rem;
+        border-radius: 22px;
+    }
+
+    .saldo-card,
+    .voucher-card,
+    .impacto-card {
+        padding: 1.2rem;
+    }
+
+    .bold-dashboard-card {
+        font-size: 1.5rem !important;
+    }
+
+    .seguranca-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .seguranca-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seguranca-card {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .cta-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-card {
+        padding: 1.5rem;
+    }
+}
