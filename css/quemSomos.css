@@ -1,13 +1,10 @@
-.gradient-wrapper {
-    background: linear-gradient(160deg, var(--color-blue-primary), var(--color-green-primary));
-}
-
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    min-height: 50vh;
+    background-color: var(--color-blue-primary);
+    min-height: calc(100vh - 80px);
+
 }
 
 .texto-header {
@@ -20,13 +17,13 @@ header {
     margin-bottom: 1.5rem;
     line-height: 1.2;
     color: var(--color-text-light);
+    font-weight: bold;
 }
 
 .texto-header p {
     font-size: var(--font-size-subtitle);
     opacity: 0.9;
     max-width: 90%;
-    color: var(--color-text-light);
 }
 
 .logo-header {
@@ -35,192 +32,13 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg-card);
-    padding: 2rem;
+    padding: 4rem;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .logo-header img {
     width: 100%;
-    max-width: 180px;
+    max-width: 350px;
     height: auto;
-}
-
-.quem-somos {
-    background: transparent;
-    padding: 5rem 10rem;
-    padding-bottom: 7rem;
-}
-
-.quem-somos h2 {
-    font-size: var(--font-size-title);
-    margin-bottom: 1rem;
-    color: var(--color-text-light);
-}
-
-.team-cards-container {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.team-card {
-    flex: 1;
-    min-width: 180px;
-    background-color: var(--color-bg-card);
-    border-radius: 22px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid var(--color-green-primary);
-}
-
-.team-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(74, 178, 74, 0.18);
-}
-
-.team-card-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-green-primary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-text-light);
-    font-family: var(--font-title);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.team-card-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-    color: var(--color-text-main);
-}
-
-.team-role {
-    display: inline-block;
-    background-color: color-mix(in srgb, var(--color-blue-primary) 18%, white);
-    color: var(--color-blue-primary);
-    padding: 0.3rem 0.8rem;
-    border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
-}
-
-.team-card-info p {
-    font-size: 0.95rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
-}
-
-.team-card-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal-overlay.ativo {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal {
-    background: var(--color-bg-card);
-    border-radius: 24px;
-    padding: 2.5rem;
-    width: 90%;
-    max-width: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
-    text-align: center;
-    position: relative;
-    transform: scale(0.85) translateY(30px);
-    transition: transform 0.35s ease;
-}
-
-.modal-overlay.ativo .modal {
-    transform: scale(1) translateY(0);
-}
-
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: var(--color-bg-main);
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s ease;
-    padding: 0;
-}
-
-.modal-close:hover {
-    background: #e0e0e0;
-}
-
-.modal-avatar {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-green-primary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: var(--font-title);
-    font-size: 2rem;
-    font-weight: 700;
-    overflow: hidden;
-}
-
-.modal-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.modal-content h2 {
-    font-size: 1.8rem;
-    color: var(--color-text-main);
-    margin: 0;
-}
-
-.modal-content p {
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    line-height: 1.7;
-    margin: 0;
-}
-
-nav {
-    background: transparent;
 }
