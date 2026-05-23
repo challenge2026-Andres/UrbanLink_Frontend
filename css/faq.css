@@ -37,28 +37,21 @@ header {
 }
 
 
-#container{
-    display: flex;
-    flex-direction: column;
-    gap:6px;
-    width: 500px;
+.faq-item {
+    margin: 1rem 0;
 }
 
-.accordion{
-    background-color: fff;
-    border-radius: 8px;
-    padding: 12px;
+details {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+summary {
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
 
-.accordion-header{
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 18px;
-    
+details p {
+    margin-top: 1rem;
 }
