@@ -1,25 +1,8 @@
-.sobre-header {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-bg-card);
-
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.sobre-header img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
-
 .como-funciona {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 5rem 0 5rem 10rem;
     overflow: hidden;
 }
@@ -57,7 +40,7 @@
     display: flex;
     gap: 1.5rem;
     overflow-x: auto;
-    padding: 0.5rem ;
+    padding: 1rem 10rem 1rem 1rem;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -77,6 +60,7 @@
     background-color: var(--color-bg-card);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
+
 .card-content {
     width: 50%;
 }
@@ -122,69 +106,105 @@
     padding-left: 0.4rem;
     opacity: 0.75;
 }
-.card-img{
-  padding: 2rem;
-  border-radius: 20px;
+
+.card-img {
+    padding: 2rem;
+    border-radius: 20px;
 
 }
+
 .card-img img {
     width: 5rem;
 }
 
-.colorCard-1{background-color: #E6F1FB;}
-.colorCard-2{background-color: #EAF3DE;}
-.colorCard-3{background-color: #E1F5EE;}
-.colorCard-4{background-color: #FAEEDA;}
+.colorCard-1 {
+    background-color: #E6F1FB;
+}
+
+.colorCard-2 {
+    background-color: #EAF3DE;
+}
+
+.colorCard-3 {
+    background-color: #E1F5EE;
+}
+
+.colorCard-4 {
+    background-color: #FAEEDA;
+}
 
 
 /* Cards o problema que resolvemos */
 .stats-section {
-  padding: 5rem 10rem 5rem 10rem;
-  background: linear-gradient(-135deg,var(--color-blue-primary),var(--color-green-primary));
-}
+    min-height: 100vh;
+    padding: 5rem 10rem;
+    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.stat-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
-}
-
-.stat-card:hover {
-  transform: translateY(-5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .stats-section h2 {
-  color: white ;
+    color: var(--color-text-light);
+    font-size: var(--font-size-title);
+    line-height: 1.1;
+    max-width: 720px;
+    margin-bottom: 0;
+}
+
+.stats-section p{
+    font-family: var(--font-text);
+    font-size: var(--font-size-subtitle);
+    color: var(--color-text-light);
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.stat-card {
+    min-height: 260px;
+    background: var(--color-bg-card);
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
 }
 
 .stat-card h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(-135deg,var(--color-blue-primary),var(--color-green-primary));
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .stat-card p {
-  color: #535353;
+    color: var(--color-text-main);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    max-width: 260px;
 }
 
 /* linha do tempo */
 .timeline-section {
-  min-height: 80vh;
+    min-height: 100vh;
     padding: 5rem 10rem 5rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .timeline-section h2#timeline-title {
@@ -262,7 +282,7 @@
     padding: 24px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     border: 1px solid #f0f0f0;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
 .timeline-card h3 {
@@ -370,8 +390,15 @@
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* sessao Call to Action (CTA Final) */
@@ -389,7 +416,7 @@
 }
 
 .cta-text-content h2 {
-  color: white;
+    color: white;
     font-size: 1.75rem;
     font-weight: 700;
 }

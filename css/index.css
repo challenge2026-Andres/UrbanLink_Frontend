@@ -41,7 +41,7 @@
     display: flex;
     gap: 1.5rem;
     overflow-x: auto;
-    padding: 0.5rem ;
+    padding: 1rem 10rem 1rem 1rem;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -61,6 +61,7 @@
     background-color: var(--color-bg-card);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
+
 .card-content {
     width: 50%;
 }
