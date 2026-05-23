@@ -12,15 +12,14 @@ function abrirModal(nome, cargo, desc, foto, inicial) {
     }
 
     document.getElementById('modal-overlay').classList.add('ativo');
-    document.body.style.overflow = 'hidden'; // trava o scroll da página
+    document.body.style.overflow = 'hidden';
 }
 
 function fecharModal() {
     document.getElementById('modal-overlay').classList.remove('ativo');
-    document.body.style.overflow = ''; // libera o scroll
+    document.body.style.overflow = '';
 }
 
-// fecha com ESC também
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') fecharModal();
 });
