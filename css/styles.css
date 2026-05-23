@@ -305,3 +305,7 @@ footer hr {
 .mb-1{
     margin-bottom: 1rem;
 }
+
+.texto-vermelho{
+    color: var(--color-danger);
+}
