@@ -47,15 +47,17 @@
       <div class="mb-1">
         <span class="caixa-destacada">Contate-nos</span>
       </div>
-      <h1>Seus pontos SoulUp virando mobilidade real.</h1>
+      <h1>Fale com o time UrbanLink</h1>
+
       <p>
-        O UrbanLink conecta engajamento sustentável a benefícios concretos no
-        transporte público. Acumule pontos, troque por vouchers e acompanhe o
-        impacto positivo das suas escolhas na cidade.
+        Tem dúvidas sobre pontos, vouchers de transporte, parcerias ou integração
+        com sistemas de mobilidade urbana? Envie sua mensagem e ajude a construir
+        uma solução mais acessível, segura e sustentável.
       </p>
     </div>
+    </div>
     <div class="logo-header">
-      <img src="../assets/logo_UrbanLink.svg" alt="Logo grande da UrbanLink" />
+      <img src="../assets/contato-page-banner.png" alt="Logo grande da UrbanLink" />
     </div>
   </header>
 
@@ -68,22 +70,20 @@
       </div>
 
       <div class="form-container">
-        <form id="form-contato" novalidate>
+        <form id="form-contato">
           <div class="form-group">
-            <label for="nome">Nome Completo *</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
-            <span class="error-message" id="error-nome"></span>
+            <label for="nome">Nome Completo <span class="texto-vermelho">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
           </div>
 
           <div class="form-group">
-            <label for="email">E-mail *</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
-            <span class="error-message" id="error-email"></span>
+            <label for="email">E-mail <span class="texto-vermelho">*</span></label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
           </div>
 
           <div class="form-group">
-            <label for="assunto">Assunto *</label>
-            <select id="assunto" name="assunto">
+            <label for="assunto">Assunto <span class="texto-vermelho">*</span></label>
+            <select id="assunto" name="assunto" required>
               <option value="">Selecione uma opção...</option>
               <option value="duvida">Dúvidas sobre Pontuações</option>
               <option value="suporte">Suporte com Vouchers</option>
@@ -94,13 +94,13 @@
           </div>
 
           <div class="form-group">
-            <label for="mensagem">Sua Mensagem *</label>
-            <textarea id="mensagem" name="mensagem" rows="5"
-              placeholder="Escreva detalhadamente o que precisa..."></textarea>
+            <label for="mensagem">Sua Mensagem <span class="texto-vermelho">*</span></label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva detalhadamente o que precisa..."
+              required></textarea>
             <span class="error-message" id="error-mensagem"></span>
           </div>
 
-          <button type="submit" id="btn-enviar" class="btn-submit">Enviar Mensagem</button>
+          <button type="submit" id="btn-enviar" class="btn-azul">Enviar Mensagem</button>
           <div id="form-feedback" class="feedback-box"></div>
         </form>
       </div>
@@ -114,18 +114,24 @@
         <ul class="footer-ul">
           <li><a href="../index.html">Home</a></li>
           <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
+          <li>
+            <a href="sobre.html">Sobre</a>
+          </li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contato.html" id="active_link_footer">Contato</a></li>
         </ul>
       </div>
       <div class="footer-info">
         <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
-        <p>Sua conexão com o futuro da mobilidade urbana sustentável.</p>
+        <p>Trazendo sustentabilidade para a sua jornada diária.</p>
       </div>
     </div>
+    <hr />
+    <div class="footer-bottom">
+      <p>&copy; 2026 UrbanLink</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
   </footer>
-  <script src="../js/contato.js"></script>
 </body>
 
 </html>
