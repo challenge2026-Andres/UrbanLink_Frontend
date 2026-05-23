@@ -37,7 +37,7 @@ header {
 }
 
 .faq-item {
-    margin: 20rem;
+    margin: 25rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
@@ -54,6 +54,8 @@ summary {
     cursor: pointer;
     font-weight: bold;
     list-style: none;
+    color: black;
+    font-size: 16px;
 }
 
 summary::-webkit-details-marker {
@@ -62,4 +64,5 @@ summary::-webkit-details-marker {
 
 details p {
     margin-top: 1rem;
+    font-size: 14px;
 }
