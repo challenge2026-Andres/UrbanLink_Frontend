@@ -8,7 +8,6 @@ header {
 
 .texto-header {
     text-align: center;
-    padding-top: 0rem;
 }
 
 .texto-header h1 {
@@ -37,9 +36,8 @@ header {
 }
 
 .faq-item {
-    margin: 25rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin: 2rem auto;
+    max-width: 600px;
 }
 
 details {
@@ -65,4 +63,17 @@ summary::-webkit-details-marker {
 details p {
     margin-top: 1rem;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .faq-item {
+        margin: 2rem;
+    }
+
+    .texto-header h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
 }
