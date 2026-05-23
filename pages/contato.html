@@ -1,102 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/logo_UrbanLink_branca.svg" />
-    <title>UrbanLink - Contato</title>
 
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/contato.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/logo_UrbanLink_branca.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <nav>
-      <a class="logo" href="index.html">
+  <!-- Estilos padrao -->
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Estilos pagina contato.html -->
+  <link rel="stylesheet" href="../css/contato.css" />
+
+  <!-- Google fonts: Poppins e Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <title>UrbanLink</title>
+</head>
+
+<body>
+  <nav>
+    <a class="logo" href="index.html">
+      <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="quemSomos.html">Quem Somos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contato.html" id="active_link">Contato</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <button class="btn-branco">Cadastre-se</button>
+      <button class="btn-vazado">Entre</button>
+    </div>
+  </nav>
+
+  <header>
+    <div class="texto-header">
+      <div class="mb-1">
+        <span class="caixa-destacada">Contate-nos</span>
+      </div>
+      <h1>Seus pontos SoulUp virando mobilidade real.</h1>
+      <p>
+        O UrbanLink conecta engajamento sustentável a benefícios concretos no
+        transporte público. Acumule pontos, troque por vouchers e acompanhe o
+        impacto positivo das suas escolhas na cidade.
+      </p>
+    </div>
+    <div class="logo-header">
+      <img src="../assets/logo_UrbanLink.svg" alt="Logo grande da UrbanLink" />
+    </div>
+  </header>
+
+  <main class="contato-main">
+    <section class="contato-section">
+      <div class="contato-intro">
+        <h1>Fale Conosco</h1>
+        <p>Tem dúvidas sobre o funcionamento do app ou quer sugerir parcerias sustentáveis para a UrbanLink? Deixe sua
+          mensagem abaixo!</p>
+      </div>
+
+      <div class="form-container">
+        <form id="form-contato" novalidate>
+          <div class="form-group">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+            <span class="error-message" id="error-nome"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
+            <span class="error-message" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione uma opção...</option>
+              <option value="duvida">Dúvidas sobre Pontuações</option>
+              <option value="suporte">Suporte com Vouchers</option>
+              <option value="parceria">Parcerias de Mobilidade</option>
+              <option value="sugestao">Sugestões / Outros</option>
+            </select>
+            <span class="error-message" id="error-assunto"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Sua Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="5"
+              placeholder="Escreva detalhadamente o que precisa..."></textarea>
+            <span class="error-message" id="error-mensagem"></span>
+          </div>
+
+          <button type="submit" id="btn-enviar" class="btn-submit">Enviar Mensagem</button>
+          <div id="form-feedback" class="feedback-box"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul class="footer-ul">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="quemSomos.html">Quem Somos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html" id="active_link_footer">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
         <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
-      </a>
-
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="quemSomos.html">Quem Somos</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html" id="active_link">Contato</a></li>
-      </ul>
-
-      <div class="nav-buttons">
-        <button class="btn-branco">Cadastre-se</button>
-        <button class="btn-vazado">Entre</button>
+        <p>Sua conexão com o futuro da mobilidade urbana sustentável.</p>
       </div>
-    </nav>
+    </div>
+  </footer>
+  <script src="../js/contato.js"></script>
+</body>
 
-    <main class="contato-main">
-      <section class="contato-section">
-        <div class="contato-intro">
-          <h1>Fale Conosco</h1>
-          <p>Tem dúvidas sobre o funcionamento do app ou quer sugerir parcerias sustentáveis para a UrbanLink? Deixe sua mensagem abaixo!</p>
-        </div>
-
-        <div class="form-container">
-          <form id="form-contato" novalidate>
-            <div class="form-group">
-              <label for="nome">Nome Completo *</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
-              <span class="error-message" id="error-nome"></span>
-            </div>
-
-            <div class="form-group">
-              <label for="email">E-mail *</label>
-              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
-              <span class="error-message" id="error-email"></span>
-            </div>
-
-            <div class="form-group">
-              <label for="assunto">Assunto *</label>
-              <select id="assunto" name="assunto">
-                <option value="">Selecione uma opção...</option>
-                <option value="duvida">Dúvidas sobre Pontuações</option>
-                <option value="suporte">Suporte com Vouchers</option>
-                <option value="parceria">Parcerias de Mobilidade</option>
-                <option value="sugestao">Sugestões / Outros</option>
-              </select>
-              <span class="error-message" id="error-assunto"></span>
-            </div>
-
-            <div class="form-group">
-              <label for="mensagem">Sua Mensagem *</label>
-              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva detalhadamente o que precisa..."></textarea>
-              <span class="error-message" id="error-mensagem"></span>
-            </div>
-
-            <button type="submit" id="btn-enviar" class="btn-submit">Enviar Mensagem</button>
-            <div id="form-feedback" class="feedback-box"></div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <ul class="footer-ul">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="quemSomos.html">Quem Somos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html" id="active_link_footer">Contato</a></li>
-          </ul>
-        </div>
-        <div class="footer-info">
-          <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
-          <p>Sua conexão com o futuro da mobilidade urbana sustentável.</p>
-        </div>
-      </div>
-    </footer>
-    <script src="../js/contato.js"></script>
-  </body>
 </html>
