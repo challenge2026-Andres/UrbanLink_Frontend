@@ -72,78 +72,96 @@
     background-color: var(--color-bg-card);
 }
 
-.error-message {
-    font-family: "Inter", sans-serif;
-    color: var(--color-error);
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
-    font-weight: 500;
-    min-height: 1rem;
-}
-
 #btn-enviar {
     width: 100%;
     background: linear-gradient(-145deg, var(--color-blue-primary), var(--color-green-primary));
     border: none;
 }
 
-.feedback-box {
-    font-family: "Inter", sans-serif;
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 600;
-    display: none;
-}
+/* RESPONSIVIDADE CONTATO */
 
-.feedback-box.success {
-    display: block;
-    background-color: #eef8e6;
-    color: var(--color-success);
-    border: 1px solid var(--color-success);
-}
-
-.feedback-box.error {
-    display: block;
-    background-color: #fde8e8;
-    color: var(--color-error);
-    border: 1px solid var(--color-error);
-}
-
-@media (max-width: 1024px) {
+/* Notebook menor */
+@media (max-width: 1200px) {
     .contato-main {
-        padding: 4rem 5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .contato-main {
-        padding: 3rem 2rem;
+        padding: 5rem 4rem;
     }
 
     .contato-section {
-        padding: 2rem;
+        max-width: 680px;
     }
 }
 
-@media (max-width: 480px) {
+/* Tablet */
+@media (max-width: 900px) {
     .contato-main {
-        padding: 2rem 1rem;
+        min-height: auto;
+        padding: 4rem 2rem;
+        align-items: flex-start;
     }
 
     .contato-section {
-        padding: 1.5rem 1.2rem;
+        max-width: 100%;
+        padding: 2.5rem;
+    }
+
+    .contato-intro {
+        margin-bottom: 2rem;
+    }
+
+    .contato-intro h1 {
+        font-size: var(--font-size-title);
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .contato-main {
+        padding: 3rem 1.5rem;
+    }
+
+    .contato-section {
+        padding: 1.5rem;
         border-radius: 20px;
+    }
+
+    .contato-intro {
+        text-align: left;
+        margin-bottom: 2rem;
     }
 
     .contato-intro h1 {
         font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .contato-intro p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
     }
 
     .form-group input,
     .form-group select,
     .form-group textarea {
         padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    #btn-enviar {
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .feedback-box {
+        font-size: 0.9rem;
+        padding: 0.9rem;
     }
 }
