@@ -6,6 +6,7 @@
     min-height: 100vh;
     padding: 5rem 0 5rem 10rem;
     overflow: hidden;
+    background-color: var(--color-bg-main);
 }
 
 .como-funciona-tabs {
@@ -13,6 +14,7 @@
     align-items: center;
     gap: 0.7rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .como-funciona-tabs span {
@@ -108,40 +110,43 @@
     opacity: 0.75;
 }
 
+.card-img {
+    padding: 2rem;
+    border-radius: 20px;
+}
+
 .card-img img {
-    max-width: 300px;
+    max-width: 220px;
 }
 
-/* section call to action */
-.cta-section {
-    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
-    color: var(--color-text-light);
-    text-align: center;
-    padding: 5rem 2rem;
-    min-height: 100vh;
+.colorCard-1 {
+    background-color: #E6F1FB;
 }
 
-.cta-section h2 {
-    font-size: var(--font-size-title);
-    margin-bottom: 1rem;
-    color: var(--color-text-light);
+.colorCard-2 {
+    background-color: #EAF3DE;
 }
 
-.cta-section p {
-    font-size: var(--font-size-subtitle);
-    line-height: 1.6;
-    opacity: 0.9;
-    max-width: 650px;
-    margin: 0 auto 2.5rem auto;
+.colorCard-3 {
+    background-color: #E1F5EE;
+}
+
+.colorCard-4 {
+    background-color: #FAEEDA;
+}
+
+.colorCard-5 {
+    background-color: #E9E6FB;
 }
 
 /* section dashboard simulacao */
-
 .deashboard-simulacao-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 4rem;
+    background-color: var(--color-bg-main);
 }
 
 .dashboard-text,
@@ -157,7 +162,6 @@
 .dashboard-text p {
     color: var(--color-text-muted);
     font-size: var(--font-size-subtitle);
-    line-height: 1.7;
     margin-bottom: 2rem;
 }
 
@@ -203,8 +207,6 @@
 }
 
 .voucher-card span {
-    /* perguntei pro gpt como uso esse background-color com a variavel --color-blue-primary só que mais clarinha
-    me seugeriu que usasse color-mix */
     background-color: color-mix(in srgb, var(--color-blue-primary) 18%, white);
     width: fit-content;
     color: var(--color-blue-primary);
@@ -212,4 +214,149 @@
     border-radius: 50px;
     font-weight: bold;
     font-size: var(--font-size-subtitle);
+}
+
+/* section seguranca */
+.seguranca-section {
+    min-height: 100vh;
+    padding: 5rem 10rem;
+    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
+    color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.seguranca-text {
+    max-width: 820px;
+}
+
+.seguranca-text h2 {
+    font-size: var(--font-size-title);
+    color: var(--color-text-light);
+    margin: 1rem 0;
+}
+
+.seguranca-text p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-subtitle);
+    color: var(--color-text-light);
+}
+
+.seguranca-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.seguranca-card {
+    min-height: 240px;
+    border-radius: 24px;
+    padding: 2rem;
+    background-color: var(--color-bg-main);
+    border: 1px solid #00000010;
+    transition: 0.3s ease;
+}
+
+.seguranca-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px -28px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+/* pesquisa pra saber como deixa a cor da fonte com efeito degrade */
+.seguranca-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.seguranca-card p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+/* section call to action */
+.cta-section {
+    background: linear-gradient(-135deg, var(--color-blue-primary), var(--color-green-primary));
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 5rem 10rem;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.cta-content {
+    max-width: 980px;
+}
+
+.cta-content .caixa-destacada {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: var(--color-text-light);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.cta-section h2 {
+    font-size: var(--font-size-title);
+    margin: 1rem 0;
+    color: var(--color-text-light);
+}
+
+.cta-section p {
+    font-size: var(--font-size-subtitle);
+    opacity: 0.9;
+    max-width: 720px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.cta-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.cta-card {
+    text-align: left;
+    padding: 2rem;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: 0.3s ease;
+}
+
+.cta-card:hover {
+    transform: translateY(-6px);
+    background-color: rgba(255, 255, 255, 0.20);
+    cursor: pointer;
+}
+
+.cta-card span {
+    display: inline-block;
+    font-family: var(--font-title);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.cta-card h3 {
+    color: var(--color-text-light);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-card p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+    opacity: 0.85;
+    margin: 0;
 }
