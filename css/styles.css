@@ -178,6 +178,15 @@ button {
     transform: translateY(-1px);
 }
 
+.menu-hamburguer {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text-light);
+    font-size: 2rem;
+    padding: 0;
+}
+
 /* header */
 header {
     display: flex;
@@ -193,10 +202,10 @@ header {
     color: var(--color-text-light);
 }
 
+
 .texto-header h1 {
     font-size: var(--font-size-title);
     margin-bottom: 1.5rem;
-    line-height: 1.2;
     color: var(--color-text-light);
     font-weight: bold;
 }
@@ -229,7 +238,7 @@ header {
 footer {
     background-color: #000;
     color: var(--color-text-light);
-    padding: 3rem 10rem 1rem;
+    padding: 3rem 3rem 1rem;
 }
 
 .footer-container {
@@ -276,7 +285,6 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-
 }
 
 .footer-info img {
@@ -290,4 +298,203 @@ footer hr {
 .footer-bottom {
     text-align: center;
     font-size: 16px;
+}
+
+.caixa-destacada {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem;
+    font-size: small;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.4);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.texto-vermelho {
+    color: var(--color-danger);
+}
+
+
+/* RESPONSIVIDADE GERAL */
+
+/* Notebook menor */
+@media (max-width: 1200px) {
+    :root {
+        --font-size-base: 18px;
+        --font-size-title: 2.4rem;
+        --font-size-title-card: 1.8rem;
+    }
+
+    header,
+    section {
+        padding: 4rem 4rem;
+    }
+
+    nav {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 14px;
+    }
+
+    .logo img {
+        max-height: 65px;
+    }
+
+    .nav-buttons {
+        gap: 0.5rem;
+    }
+
+    button {
+        padding: 0.65rem 1.1rem;
+        font-size: 0.9rem;
+    }
+
+    .logo-header {
+        padding: 3rem;
+    }
+
+    .logo-header img {
+        max-width: 300px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    :root {
+        --font-size-base: 17px;
+        --font-size-title: 2.2rem;
+        --font-size-subtitle: 1rem;
+        --font-size-title-card: 1.7rem;
+    }
+
+    nav {
+        padding: 1.2rem 2rem;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        position: relative;
+        left: 0;
+        transform: translateX(0);
+        top: 0;
+        transform: translate(0);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+        min-height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .texto-header p {
+        max-width: 100%;
+    }
+
+    .logo-header {
+        width: 100%;
+        max-width: 480px;
+        padding: 2.5rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .footer-ul {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    :root {
+        --font-size-base: 16px;
+        --font-size-title: 2rem;
+        --font-size-subtitle: 1rem;
+        --font-size-title-card: 1.6rem;
+    }
+
+    header,
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo img {
+        max-height: 50px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: none;
+        width: 100%;
+        background-color: var(--color-blue-primary);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1.5rem 0;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .texto-header h1 {
+        line-height: 1.15;
+    }
+
+    .logo-header {
+        padding: 2rem;
+    }
+
+    .logo-header img {
+        max-width: 240px;
+    }
+
+    footer {
+        padding: 3rem 1.5rem 1rem;
+    }
+
+    .footer-ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .footer-info {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-info img {
+        max-height: 60px;
+    }
 }
