@@ -20,7 +20,6 @@ header {
     margin-bottom: 1.5rem;
     line-height: 1.2;
     color: var(--color-text-light);
-    font-weight: bold;
 }
 
 .texto-header p {
