@@ -59,7 +59,7 @@
     
           <div class="team-cards-container">
     
-            <article class="team-card">
+            <article class="team-card" onclick="abrirModal('Felipe Falcão', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/FelipeFalcão.jpeg')">
               <div class="team-card-avatar">
                 <img src="../assets/FelipeFalcão.jpeg" alt="Foto do Felipe Falcão" />
               </div>
@@ -70,7 +70,7 @@
               </div>
             </article>
     
-            <article class="team-card">
+            <article class="team-card" onclick="abrirModal('Rafael Andres', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/RafaelAndres.jpg')">
               <div class="team-card-avatar">
                 <img src="../assets/RafaelAndres.jpg" alt="Foto do Rafael Andres" />
               </div>
@@ -81,7 +81,7 @@
               </div>
             </article>
     
-            <article class="team-card">
+            <article class="team-card" onclick="abrirModal('Vitor Reis', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/VitorReis copy.jpg')">
               <div class="team-card-avatar">
                 <img src="../assets/VitorReis copy.jpg" alt="Foto do Vitor Reis" />
               </div>
@@ -92,7 +92,7 @@
               </div>
             </article>
     
-            <article class="team-card">
+            <article class="team-card" onclick="abrirModal('Felipe Cabral', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/FelipeCabral.jpg')">
               <div class="team-card-avatar">
                 <img src="../assets/FelipeCabral.jpg" alt="Foto do Felipe Cabral" />
               </div>
@@ -103,7 +103,7 @@
               </div>
             </article>
     
-            <article class="team-card">
+            <article class="team-card" onclick="abrirModal('Vitor Rodrigo', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/VitorRodrigo.jpg')">
               <div class="team-card-avatar">
                 <img src="../assets/VitorRodrigo.jpg" alt="Foto do Vitor Rodrigo" />
               </div>
@@ -141,5 +141,20 @@
         <p>Todos os direitos reservados.</p>
       </div>
     </footer>
+
+<div class="modal-overlay" id="modal-overlay" onclick="fecharModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="fecharModal()">✕</button>
+    <div class="modal-avatar" id="modal-avatar"></div>
+    <div class="modal-content">
+      <h2 id="modal-nome"></h2>
+      <span class="team-role" id="modal-cargo"></span>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<script src="../js/quemSomos.js"></script>
+
   </body>
 </html>
