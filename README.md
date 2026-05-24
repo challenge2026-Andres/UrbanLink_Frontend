@@ -4,6 +4,15 @@ UrbanLink e uma proposta de solucao front-end para a SoulUp, criada para incenti
 
 ![Banner da UrbanLink](assets/logosUrbanLink/logo_UrbanLink.svg)
 
+<video
+  src="./assets/Video.mp4"
+  width="800"
+  autoplay
+  muted
+  loop
+  playsinline
+></video>
+
 ## Objetivo
 
 O projeto resolve o problema 2 do challenge da SoulUp: transformar mobilidade sustentavel em uma experiencia recompensadora, acessivel e mensuravel. A solucao combina:
