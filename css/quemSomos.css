@@ -116,11 +116,18 @@
 }
 
 .team-rm,
-.modal-rm {
+.team-turma,
+.modal-rm,
+.modal-turma {
     font-size: 0.9rem;
     font-weight: bold;
     color: var(--color-blue-primary);
     margin-bottom: 0.7rem;
+}
+
+.team-turma,
+.modal-turma {
+    color: var(--color-text-muted);
 }
 
 .modal-socials {
