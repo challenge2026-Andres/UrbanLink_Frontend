@@ -212,7 +212,7 @@
 /* RESPONSIVIDADE QUEM SOMOS */
 
 /* Notebook menor */
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     .quem-somos {
         padding: 5rem 4rem 6rem;
     }
