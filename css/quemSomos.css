@@ -1,58 +1,16 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-blue-primary);
-    min-height: calc(100vh - 80px);
-
-}
-
-.texto-header {
-    flex: 1;
-    color: var(--color-text-light);
-}
-
-.texto-header h1 {
-    font-size: var(--font-size-title);
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    color: var(--color-text-light);
-    font-weight: bold;
-}
-
-.texto-header p {
-    font-size: var(--font-size-subtitle);
-    opacity: 0.9;
-    max-width: 90%;
-}
-
-.logo-header {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-bg-card);
-    padding: 4rem;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.logo-header img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-}
-
 .quem-somos {
-    background: transparent;
     padding: 5rem 10rem;
     padding-bottom: 7rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quem-somos h2 {
     font-size: var(--font-size-title);
     margin-bottom: 1rem;
-    color: var(--color-text-light);
+    color: var(--color-text-main);
 }
 
 .team-cards-container {
@@ -78,6 +36,7 @@ header {
 .team-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(74, 178, 74, 0.18);
+    cursor: pointer;
 }
 
 .team-card-avatar {
@@ -95,7 +54,7 @@ header {
 }
 
 .team-card-info h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 0.3rem;
     color: var(--color-text-main);
 }
@@ -218,6 +177,118 @@ header {
     margin: 0;
 }
 
-nav {
-    background: transparent;
+/* RESPONSIVIDADE QUEM SOMOS */
+
+/* Notebook menor */
+@media (max-width: 1200px) {
+    .quem-somos {
+        padding: 5rem 4rem 6rem;
+    }
+
+    .team-card {
+        min-width: 220px;
+    }
+
+    .team-card-info h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .quem-somos {
+        min-height: auto;
+        padding: 4rem 2rem 5rem;
+    }
+
+    .quem-somos h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .team-cards-container {
+        justify-content: center;
+    }
+
+    .team-card {
+        flex: 0 0 calc(50% - 0.75rem);
+        min-width: 0;
+    }
+
+    .team-card-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .modal {
+        max-width: 430px;
+        padding: 2rem;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .quem-somos {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    .quem-somos h2 {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+
+    .team-cards-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .team-card {
+        width: 100%;
+        flex: none;
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+
+    .team-card-avatar {
+        width: 56px;
+        height: 56px;
+    }
+
+    .team-card-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .team-role {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.7rem;
+    }
+
+    .team-card-info p {
+        font-size: 0.9rem;
+    }
+
+    .modal {
+        width: calc(100% - 2rem);
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .modal-avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-content p {
+        font-size: 0.95rem;
+    }
+
+    .modal-close {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
 }

@@ -4,19 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="../assets/logo_UrbanLink_branca.svg" />
-
+  <link rel="icon" type="image/x-icon" href="../assets/logosUrbanLink/logo_UrbanLink_branca.svg" />
+  <!-- Estilos padrao -->
   <link rel="stylesheet" href="../css/styles.css" />
 
+  <!-- Estilos pagina index.html -->
   <link rel="stylesheet" href="../css/quemSomos.css" />
 
+  <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
 
-  <title>Quem Somos</title>
+  <title>Urban Link - Quem Somos</title>
 </head>
 
 <body>
@@ -24,11 +26,14 @@
   <div class="gradient-wrapper">
 
     <nav>
-      <a class="logo" href="index.html">
-        <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
+      <a class="logo" href="../index.html">
+        <img src="../assets/logosUrbanLink/logo_UrbanLink_branca.svg" alt="Logo da UrbanLink" />
       </a>
 
-      <ul class="nav-links">
+      <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir menu">
+        ☰
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="quemSomos.html" id="active_link">Quem Somos</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -49,7 +54,8 @@
           unidos para transformar engajamento sustentável em soluções reais para as cidades.</p>
       </div>
       <div class="logo-header">
-        <img src="../assets/logo_UrbanLink.svg" alt="Logo grande do UrbanLink" />
+        <img src="../assets/banners/quem-somos-banner.png"
+          alt="Ilustração de equipe de estudantes desenvolvendo uma solução de mobilidade urbana sustentável" />
       </div>
     </header>
 
@@ -60,45 +66,9 @@
         <div class="team-cards-container">
 
           <article class="team-card"
-            onclick="abrirModal('Felipe Falcão', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/FelipeFalcão.jpeg')">
+            onclick="abrirModal('Felipe Cabral', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/integrantes/FelipeCabral.jpg')">
             <div class="team-card-avatar">
-              <img src="../assets/FelipeFalcão.jpeg" alt="Foto do Felipe Falcão" />
-            </div>
-            <div class="team-card-info">
-              <h3>Felipe Falcão</h3>
-              <span class="team-role">Desenvolvedor</span>
-              <p>Responsável pelo desenvolvimento.</p>
-            </div>
-          </article>
-
-          <article class="team-card"
-            onclick="abrirModal('Rafael Andres', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/RafaelAndres.jpg')">
-            <div class="team-card-avatar">
-              <img src="../assets/RafaelAndres.jpg" alt="Foto do Rafael Andres" />
-            </div>
-            <div class="team-card-info">
-              <h3>Rafael Andres</h3>
-              <span class="team-role">Desenvolvedor</span>
-              <p>Responsável pelo desenvolvimento.</p>
-            </div>
-          </article>
-
-          <article class="team-card"
-            onclick="abrirModal('Vitor Reis', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/VitorReis copy.jpg')">
-            <div class="team-card-avatar">
-              <img src="../assets/VitorReis copy.jpg" alt="Foto do Vitor Reis" />
-            </div>
-            <div class="team-card-info">
-              <h3>Vitor Reis</h3>
-              <span class="team-role">Desenvolvedor</span>
-              <p>Responsável pelo desenvolvimento.</p>
-            </div>
-          </article>
-
-          <article class="team-card"
-            onclick="abrirModal('Felipe Cabral', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/FelipeCabral.jpg')">
-            <div class="team-card-avatar">
-              <img src="../assets/FelipeCabral.jpg" alt="Foto do Felipe Cabral" />
+              <img src="../assets/integrantes/FelipeCabral.jpg" alt="Foto de Felipe Cabral" />
             </div>
             <div class="team-card-info">
               <h3>Felipe Cabral</h3>
@@ -108,9 +78,45 @@
           </article>
 
           <article class="team-card"
-            onclick="abrirModal('Vitor Rodrigo', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/VitorRodrigo.jpg')">
+            onclick="abrirModal('Felipe Falcão', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/integrantes/FelipeFalcao.jpeg')">
             <div class="team-card-avatar">
-              <img src="../assets/VitorRodrigo.jpg" alt="Foto do Vitor Rodrigoo" />
+              <img src="../assets/integrantes/FelipeFalcao.jpeg" alt="Foto de Felipe Falcão" />
+            </div>
+            <div class="team-card-info">
+              <h3>Felipe Falcão</h3>
+              <span class="team-role">Desenvolvedor</span>
+              <p>Responsável pelo desenvolvimento.</p>
+            </div>
+          </article>
+
+          <article class="team-card"
+            onclick="abrirModal('Rafael Andres', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/integrantes/RafaelAndres.jpg')">
+            <div class="team-card-avatar">
+              <img src="../assets/integrantes/RafaelAndres.jpg" alt="Foto de Rafael Andres" />
+            </div>
+            <div class="team-card-info">
+              <h3>Rafael Andres</h3>
+              <span class="team-role">Desenvolvedor</span>
+              <p>Responsável pelo desenvolvimento.</p>
+            </div>
+          </article>
+
+          <article class="team-card"
+            onclick="abrirModal('Vitor Reis', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/integrantes/VitorReis copy.jpg')">
+            <div class="team-card-avatar">
+              <img src="../assets/integrantes/VitorReis copy.jpg" alt="Foto de Vitor Reis" />
+            </div>
+            <div class="team-card-info">
+              <h3>Vitor Reis</h3>
+              <span class="team-role">Desenvolvedor</span>
+              <p>Responsável pelo desenvolvimento.</p>
+            </div>
+          </article>
+
+          <article class="team-card"
+            onclick="abrirModal('Vitor Rodrigo', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/integrantes/VitorRodrigo.jpg')">
+            <div class="team-card-avatar">
+              <img src="../assets/integrantes/VitorRodrigo.jpg" alt="Foto de Vitor Rodrigo" />
             </div>
             <div class="team-card-info">
               <h3>Vitor Rodrigo</h3>
@@ -136,7 +142,7 @@
         </ul>
       </div>
       <div class="footer-info">
-        <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
+        <img src="../assets/logosUrbanLink/logo_UrbanLink_branca.svg" alt="Logo da UrbanLink" />
         <p>Trazendo sustentabilidade para a sua jornada diária.</p>
       </div>
     </div>
