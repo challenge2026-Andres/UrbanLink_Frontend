@@ -6,7 +6,7 @@ UrbanLink e uma proposta de solucao front-end para a SoulUp, criada para incenti
 
 ## Demonstração
 
-<video src="./assets/Video.mp4" width="800" autoplay muted loop playsinline></video>
+[<video src="./assets/Video.mp4" width="800" autoplay muted loop playsinline></video>](https://github.com/user-attachments/assets/28df82cd-30e5-4134-8c1f-3da1121e7975)
 
 ## Objetivo
 
