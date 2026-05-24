@@ -1,7 +1,7 @@
-function abrirModal(nome, cargo, desc, foto, inicial) {
+function abrirModal(nome, cargo, rm, foto, github, linkedin, inicial) {
     document.getElementById('modal-nome').textContent = nome;
     document.getElementById('modal-cargo').textContent = cargo;
-    document.getElementById('modal-desc').textContent = desc;
+    document.getElementById('modal-rm').textContent = rm;
 
     const avatar = document.getElementById('modal-avatar');
 
@@ -10,6 +10,15 @@ function abrirModal(nome, cargo, desc, foto, inicial) {
     } else {
         avatar.innerHTML = inicial;
     }
+
+    const modalGithub = document.getElementById('modal-github');
+    const modalLinkedin = document.getElementById('modal-linkedin');
+
+    modalGithub.href = github;
+    modalGithub.setAttribute('aria-label', `GitHub de ${nome}`);
+
+    modalLinkedin.href = linkedin;
+    modalLinkedin.setAttribute('aria-label', `LinkedIn de ${nome}`);
 
     document.getElementById('modal-overlay').classList.add('ativo');
     document.body.style.overflow = 'hidden';
