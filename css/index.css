@@ -1,145 +1,3 @@
-/* section como funciona */
-.como-funciona {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 5rem 0 5rem 10rem;
-    overflow: hidden;
-    background-color: var(--color-bg-main);
-}
-
-.como-funciona-tabs {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-}
-
-.como-funciona-tabs span {
-    font-size: var(--font-size-subtitle);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--color-text-main);
-}
-
-.tab {
-    border: 1px solid #00000027;
-    background-color: var(--color-bg-card);
-    color: var(--color-text-muted);
-    padding: 0.45rem 0.8rem;
-    border-radius: 10px;
-    font-size: 0.75rem;
-}
-
-.tab.active {
-    background-color: color-mix(in srgb, var(--color-green-primary) 18%, white);
-    border-color: var(--color-green-primary);
-    color: var(--color-text-main);
-}
-
-.cards-container {
-    display: flex;
-    gap: 1.5rem;
-    overflow-x: auto;
-    padding: 1rem 10rem 1rem 1rem;
-    scroll-behavior: smooth;
-}
-
-.cards-container::-webkit-scrollbar {
-    display: none;
-}
-
-.card {
-    min-height: 500px;
-    min-width: 800px;
-    border-radius: 22px;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    overflow: hidden;
-    background-color: var(--color-bg-card);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-}
-
-.card-content {
-    width: 50%;
-}
-
-.card h3 {
-    font-size: var(--font-size-title-card);
-    margin-bottom: 1rem;
-    color: var(--color-text-main);
-}
-
-.card p {
-    font-size: var(--font-size-subtitle);
-    color: var(--color-text-main);
-    margin-bottom: 2rem;
-}
-
-.card-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.card-links a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0.75rem 0;
-    border-top: 1px solid #00000027;
-    color: var(--color-text-main);
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.card-links a::after {
-    content: "→";
-    font-size: 1rem;
-}
-
-.card-links a:hover {
-    padding-left: 0.4rem;
-    opacity: 0.75;
-}
-
-.card-img {
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-.card-img img {
-    max-width: 220px;
-}
-
-.colorCard-1 {
-    background-color: #E6F1FB;
-}
-
-.colorCard-2 {
-    background-color: #EAF3DE;
-}
-
-.colorCard-3 {
-    background-color: #E1F5EE;
-}
-
-.colorCard-4 {
-    background-color: #FAEEDA;
-}
-
-.colorCard-5 {
-    background-color: #E9E6FB;
-}
-
 /* section dashboard simulacao */
 .deashboard-simulacao-section {
     min-height: 100vh;
@@ -266,7 +124,7 @@
     cursor: pointer;
 }
 
-/* pesquisa pra saber como deixa a cor da fonte com efeito degrade */
+/* Destaque visual para os titulos dos cards de seguranca */
 .seguranca-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -378,8 +236,9 @@
         min-width: 680px;
     }
 
-    .card-img img {
-        max-width: 180px;
+    .como-funciona {
+        --card-img-box-size: 8rem;
+        --card-img-size: 3.8rem;
     }
 
     .deashboard-simulacao-section,
@@ -424,8 +283,9 @@
         align-self: flex-end;
     }
 
-    .card-img img {
-        max-width: 150px;
+    .como-funciona {
+        --card-img-box-size: 7rem;
+        --card-img-size: 3.3rem;
     }
 
     .deashboard-simulacao-section {
@@ -501,11 +361,8 @@
     }
 
     .card-img {
-        padding: 1.5rem;
-    }
-
-    .card-img img {
-        max-width: 120px;
+        --card-img-box-size: 6rem;
+        --card-img-size: 2.9rem;
     }
 
     .deashboard-simulacao-section {

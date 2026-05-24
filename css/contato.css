@@ -21,7 +21,7 @@
     margin-bottom: 2.5rem;
 }
 
-.contato-intro h1 {
+.contato-intro h2 {
     font-family: "Poppins", sans-serif;
     color: var(--color-text-main);
     font-size: var(--font-size-title);
@@ -78,17 +78,40 @@
     border: none;
 }
 
-#message {
-    color: var(--color-success);
-}
-
-#nome-message{
+#nome-message,
+#email-message,
+#assunto-message,
+#mensagem-message {
     color: var(--color-danger);
+    margin-top: 0.45rem;
 }
 
-#message, #nome-message{
+#nome-message,
+#email-message,
+#assunto-message,
+#mensagem-message,
+.feedback-box {
     text-align: center;
     font-size: 1rem;
+}
+
+.feedback-box {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    display: none;
+}
+
+.feedback-success {
+    display: block;
+    color: var(--color-success);
+    background-color: color-mix(in srgb, var(--color-success) 12%, white);
+}
+
+.feedback-error {
+    display: block;
+    color: var(--color-danger);
+    background-color: color-mix(in srgb, var(--color-danger) 12%, white);
 }
 
 /* RESPONSIVIDADE CONTATO */
@@ -121,7 +144,7 @@
         margin-bottom: 2rem;
     }
 
-    .contato-intro h1 {
+    .contato-intro h2 {
         font-size: var(--font-size-title);
     }
 }
@@ -142,7 +165,7 @@
         margin-bottom: 2rem;
     }
 
-    .contato-intro h1 {
+    .contato-intro h2 {
         font-size: 1.8rem;
         line-height: 1.2;
     }

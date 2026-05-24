@@ -90,7 +90,6 @@
 .faq-card.active .faq-question span {
     background-color: var(--color-green-primary);
     color: var(--color-text-light);
-    transform: rotate(45deg);
 }
 
 /* RESPONSIVIDADE FAQ */
