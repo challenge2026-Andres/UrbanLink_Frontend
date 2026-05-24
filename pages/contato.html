@@ -78,6 +78,7 @@
           <div class="form-group">
             <label for="nome">Nome Completo <span class="texto-vermelho">*</span></label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+            <span id="nome-message"></span>
           </div>
 
           <div class="form-group">
@@ -94,14 +95,14 @@
               <option value="parceria">Parcerias de Mobilidade</option>
               <option value="sugestao">Sugestões / Outros</option>
             </select>
-            <span class="error-message" id="error-assunto"></span>
           </div>
 
           <div class="form-group">
             <label for="mensagem">Sua Mensagem <span class="texto-vermelho">*</span></label>
             <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva detalhadamente o que precisa..."
               required></textarea>
-            <span class="error-message" id="error-mensagem"></span>
+
+            <span id="message"></span>
           </div>
 
           <button type="submit" id="btn-enviar" class="btn-azul">Enviar Mensagem</button>
@@ -137,6 +138,7 @@
     </div>
   </footer>
   <script src="../js/script.js"></script>
+  <script src="../js/contato.js"></script>
 </body>
 
 </html>
