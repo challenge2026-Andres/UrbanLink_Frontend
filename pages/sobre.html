@@ -1,334 +1,401 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/logosUrbanLink/logo_UrbanLink_branca.svg"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="../assets/logosUrbanLink/logo_UrbanLink_branca.svg" />
+    <!-- Estilos padrao -->
+    <link rel="stylesheet" href="../css/styles.css" />
 
-  <!-- Estilos padrao -->
-  <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Estilos pagina sobre.html -->
+    <link rel="stylesheet" href="../css/sobre.css" />
 
-  <!-- Estilos pagina sobre.html -->
-  <link rel="stylesheet" href="../css/sobre.css" />
+    <!-- Google fonts: Poppins e Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google fonts: Poppins e Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <title>UrbanLink - Sobre</title>
+  </head>
 
-  <title>UrbanLink - Sobre</title>
-</head>
+  <body>
+    <nav>
+      <a class="logo" href="../index.html">
+        <img
+          src="../assets/logosUrbanLink/logo_UrbanLink_branca.svg"
+          alt="logo da UrbanLink"
+        />
+      </a>
 
-<body>
-  <nav>
-    <a class="logo" href="../index.html">
-      <img src="../assets/logosUrbanLink/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
-    </a>
+      <button
+        class="menu-hamburguer"
+        id="menu-hamburguer"
+        aria-label="Abrir menu"
+      >
+        ☰
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="quemSomos.html">Quem Somos</a></li>
+        <li><a href="sobre.html" id="active_link">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
 
-    <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir menu">
-      ☰
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="quemSomos.html">Quem Somos</a></li>
-      <li><a href="sobre.html" id="active_link">Sobre</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-
-    <div class="nav-buttons">
-      <button class="btn-branco">Cadastre-se</button>
-      <button class="btn-vazado">Entre</button>
-    </div>
-  </nav>
-
-  <header>
-    <div class="texto-header">
-      <div class="mb-1">
-        <span class="caixa-destacada">Sobre a UrbanLink</span>
+      <div class="nav-buttons">
+        <button class="btn-branco">Cadastre-se</button>
+        <button class="btn-vazado">Entre</button>
       </div>
+    </nav>
 
-      <h1>Mobilidade sustentável que recompensa de verdade</h1>
-      <p>
-        A UrbanLink nasceu de uma demanda real: criar incentivos concretos
-        para que mais pessoas escolham o transporte público. Acumule pontos em
-        cada trajeto, troque por benefícios e acompanhe seu impacto positivo
-        na cidade.
-      </p>
-    </div>
-    <div class="logo-header">
-      <img src="../assets/banners/sobre.png"
-        alt="Ilustração sobre mobilidade sustentável, recompensas digitais e transporte público" />
-    </div>
-  </header>
-  <main>
-    <section class="como-funciona">
-      <div class="como-funciona-tabs">
-        <span>O que nos move?</span>
-        <button class="tab active" data-target="0">Validação real</button>
-        <button class="tab" data-target="1">Impacto mensurável</button>
-        <button class="tab" data-target="2">Gamificação</button>
-        <button class="tab" data-target="3">Parcerias ESG</button>
-      </div>
-
-      <div class="cards-container">
-        <article class="card">
-          <div class="card-content">
-            <h3>Validação real</h3>
-            <p>
-              Geolocalização e registro fotográfico confirmam cada trajeto,
-              garantindo recompensas justas para quem realmente usa o
-              transporte público.
-            </p>
-          </div>
-
-          <div class="card-img colorCard-1">
-            <img src="../assets/icons/geo-alt.svg" alt="pin-localizacao" />
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-content">
-            <h3>Impacto mensurável</h3>
-            <p>
-              Cada viagem gera dados de CO₂ não emitido, visíveis ao usuário e
-              disponíveis para relatórios ESG de empresas parceiras.
-            </p>
-          </div>
-
-          <div class="card-img colorCard-2">
-            <img src="../assets/icons/leaf.svg" alt="folha" />
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Gamificação</h3>
-            <p>
-              Desafios semanais, metas e rankings transformam o uso do ônibus
-              em uma experiência interativa e motivadora.
-            </p>
-          </div>
-
-          <div class="card-img colorCard-3">
-            <img src="../assets/icons/trophy.svg" alt="trofeu" />
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Parcerias ESG</h3>
-            <p>
-              Empresas financiam as recompensas e recebem métricas concretas
-              de impacto ambiental — sustentabilidade que pode ser comprovada.
-            </p>
-          </div>
-
-          <div class="card-img colorCard-4">
-            <img src="../assets/icons/building.svg" alt="predio" />
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="stats-section">
-      <h2>O problema que resolvemos</h2>
-      <p>Dados que mostram por que incentivar o transporte público é essencial para criar uma cidade mais sustentável,
-        acessível e eficiente.</p>
-
-      <div class="stats-grid">
-        <div class="stat-card">
-          <h3>-14pts</h3>
-          <p>
-            queda no uso do transporte público no Brasil entre 2017 e 2024
-          </p>
+    <header>
+      <div class="texto-header">
+        <div class="mb-1">
+          <span class="caixa-destacada">Sobre a UrbanLink</span>
         </div>
 
-        <div class="stat-card">
-          <h3>29,4%</h3>
-          <p>dos usuários deixaram o ônibus completamente</p>
-        </div>
-
-        <div class="stat-card">
-          <h3>69,6%</h3>
-          <p>voltariam a usar se o custo efetivo fosse menor</p>
-        </div>
-
-        <div class="stat-card">
-          <h3>6×</h3>
-          <p>menos CO₂ por passageiro no transporte coletivo vs. carro</p>
-        </div>
+        <h1>Mobilidade sustentável que recompensa de verdade</h1>
+        <p>
+          A UrbanLink nasceu de uma demanda real: criar incentivos concretos
+          para que mais pessoas escolham o transporte público. Acumule pontos em
+          cada trajeto, troque por benefícios e acompanhe seu impacto positivo
+          na cidade.
+        </p>
       </div>
-    </section>
+      <div class="logo-header">
+        <img
+          src="../assets/banners/sobre.png"
+          alt="Ilustração sobre mobilidade sustentável, recompensas digitais e transporte público"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="como-funciona">
+        <div class="como-funciona-tabs">
+          <span>O que nos move?</span>
+          <button class="tab active" data-target="0">Validação real</button>
+          <button class="tab" data-target="1">Impacto mensurável</button>
+          <button class="tab" data-target="2">Gamificação</button>
+          <button class="tab" data-target="3">Parcerias ESG</button>
+        </div>
 
-    <section class="timeline-section" aria-labelledby="timeline-title">
-      <h2 id="timeline-title">Como chegamos até aqui</h2>
-
-      <div class="timeline-container">
-        <div class="timeline" role="tablist" aria-label="Etapas do projeto">
-          <button class="timeline-item active" role="tab" aria-selected="true" aria-controls="panel-origem"
-            id="tab-origem" onmouseenter="switchTimelineTab(event, 'panel-origem')">
-            <div class="timeline-badge" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <span class="tag">Origem</span>
-              <h3>Demanda da SoulUp</h3>
+        <div class="cards-container">
+          <article class="card">
+            <div class="card-content">
+              <h3>Validação real</h3>
               <p>
+                Geolocalização e registro fotográfico confirmam cada trajeto,
+                garantindo recompensas justas para quem realmente usa o
+                transporte público.
+              </p>
+            </div>
+
+            <div class="card-img colorCard-1">
+              <img src="../assets/icons/geo-alt.svg" alt="pin-localizacao" />
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-content">
+              <h3>Impacto mensurável</h3>
+              <p>
+                Cada viagem gera dados de CO₂ não emitido, visíveis ao usuário e
+                disponíveis para relatórios ESG de empresas parceiras.
+              </p>
+            </div>
+
+            <div class="card-img colorCard-2">
+              <img src="../assets/icons/leaf.svg" alt="folha" />
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-content">
+              <h3>Gamificação</h3>
+              <p>
+                Desafios semanais, metas e rankings transformam o uso do ônibus
+                em uma experiência interativa e motivadora.
+              </p>
+            </div>
+
+            <div class="card-img colorCard-3">
+              <img src="../assets/icons/trophy.svg" alt="trofeu" />
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-content">
+              <h3>Parcerias ESG</h3>
+              <p>
+                Empresas financiam as recompensas e recebem métricas concretas
+                de impacto ambiental — sustentabilidade que pode ser comprovada.
+              </p>
+            </div>
+
+            <div class="card-img colorCard-4">
+              <img src="../assets/icons/building.svg" alt="predio" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <h2>O problema que resolvemos</h2>
+        <p>
+          Dados que mostram por que incentivar o transporte público é essencial
+          para criar uma cidade mais sustentável, acessível e eficiente.
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>-14pts</h3>
+            <p>
+              queda no uso do transporte público no Brasil entre 2017 e 2024
+            </p>
+          </div>
+
+          <div class="stat-card">
+            <h3>29,4%</h3>
+            <p>dos usuários deixaram o ônibus completamente</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>69,6%</h3>
+            <p>voltariam a usar se o custo efetivo fosse menor</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>6×</h3>
+            <p>menos CO₂ por passageiro no transporte coletivo vs. carro</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline-section" aria-labelledby="timeline-title">
+        <h2 id="timeline-title">Como chegamos até aqui</h2>
+
+        <div class="timeline-container">
+          <div class="timeline" role="tablist" aria-label="Etapas do projeto">
+            <button
+              class="timeline-item active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-origem"
+              id="tab-origem"
+              onmouseenter="switchTimelineTab(event, 'panel-origem')"
+            >
+              <div class="timeline-badge" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="tag">Origem</span>
+                <h3>Demanda da SoulUp</h3>
+                <p>
+                  A SoulUp identificou mobilidade sustentável como próxima
+                  vertical...
+                </p>
+              </div>
+            </button>
+
+            <button
+              class="timeline-item"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-pesquisa"
+              id="tab-pesquisa"
+              onmouseenter="switchTimelineTab(event, 'panel-pesquisa')"
+            >
+              <div class="timeline-badge" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="tag">Pesquisa</span>
+                <h3>Entendimento do problema</h3>
+                <p>
+                  Mapeamento dos dados de queda no uso do transporte público...
+                </p>
+              </div>
+            </button>
+
+            <button
+              class="timeline-item"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-concepcao"
+              id="tab-concepcao"
+              onmouseenter="switchTimelineTab(event, 'panel-concepcao')"
+            >
+              <div class="timeline-badge" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="tag">Concepção</span>
+                <h3>Solução e modelo de negócio</h3>
+                <p>
+                  Desenvolvimento da proposta com validação por
+                  geolocalização...
+                </p>
+              </div>
+            </button>
+
+            <button
+              class="timeline-item"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-piloto"
+              id="tab-piloto"
+              onmouseenter="switchTimelineTab(event, 'panel-piloto')"
+            >
+              <div class="timeline-badge" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="tag">Próximo passo</span>
+                <h3>Piloto na Região Metropolitana de SP</h3>
+                <p>Validação com usuários reais em uma linha de ônibus...</p>
+              </div>
+            </button>
+          </div>
+
+          <div class="timeline-detail-panel">
+            <article
+              id="panel-origem"
+              role="tabpanel"
+              aria-labelledby="tab-origem"
+              class="detail-content active"
+            >
+              <span class="detail-tag">Origem</span>
+              <h2>Demanda da SoulUp</h2>
+              <p class="lead">
                 A SoulUp identificou mobilidade sustentável como próxima
-                vertical...
+                vertical de expansão e trouxe o desafio para a faculdade — a
+                UrbanLink nasceu como resposta direta a essa demanda.
               </p>
-            </div>
-          </button>
-
-          <button class="timeline-item" role="tab" aria-selected="false" aria-controls="panel-pesquisa"
-            id="tab-pesquisa" onmouseenter="switchTimelineTab(event, 'panel-pesquisa')">
-            <div class="timeline-badge" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <span class="tag">Pesquisa</span>
-              <h3>Entendimento do problema</h3>
               <p>
-                Mapeamento dos dados de queda no uso do transporte público...
+                Por ser uma feature nativa da SoulUp, a UrbanLink parte com
+                infraestrutura, base de usuários e parcerias já estabelecidas
+                desde o primeiro dia — eliminando os principais riscos de um
+                produto novo.
               </p>
-            </div>
-          </button>
+              <ul>
+                <li>Investimento e infraestrutura garantidos pela SoulUp</li>
+                <li>Base de usuários existente desde o lançamento</li>
+                <li>Parcerias ESG já no ecossistema da plataforma</li>
+              </ul>
+            </article>
 
-          <button class="timeline-item" role="tab" aria-selected="false" aria-controls="panel-concepcao"
-            id="tab-concepcao" onmouseenter="switchTimelineTab(event, 'panel-concepcao')">
-            <div class="timeline-badge" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <span class="tag">Concepção</span>
-              <h3>Solução e modelo de negócio</h3>
+            <article
+              id="panel-pesquisa"
+              role="tabpanel"
+              aria-labelledby="tab-pesquisa"
+              class="detail-content"
+            >
+              <span class="detail-tag">Pesquisa</span>
+              <h2>Entendimento Profundo do Problema</h2>
+              <p class="lead">
+                Dados coletados e análises de mercado sobre o transporte público
+                no Brasil.
+              </p>
               <p>
-                Desenvolvimento da proposta com validação por
-                geolocalização...
+                O uso do transporte público caiu 14 pontos percentuais entre
+                2017 e 2024, segundo pesquisa CNT/NTU. Cerca de 29,4% dos
+                usuários abandonaram o ônibus completamente, e 69,6% voltariam a
+                usá-lo se o custo efetivo fosse menor. Ao mesmo tempo, o mercado
+                de fidelização cresceu 17,6% em 2024, movimentando R$ 21,9
+                bilhões — provando que as pessoas respondem a incentivos.
               </p>
-            </div>
-          </button>
+            </article>
 
-          <button class="timeline-item" role="tab" aria-selected="false" aria-controls="panel-piloto" id="tab-piloto"
-            onmouseenter="switchTimelineTab(event, 'panel-piloto')">
-            <div class="timeline-badge" aria-hidden="true"></div>
-            <div class="timeline-card">
-              <span class="tag">Próximo passo</span>
-              <h3>Piloto na Região Metropolitana de SP</h3>
-              <p>Validação com usuários reais em uma linha de ônibus...</p>
-            </div>
-          </button>
+            <article
+              id="panel-concepcao"
+              role="tabpanel"
+              aria-labelledby="tab-concepcao"
+              class="detail-content"
+            >
+              <span class="detail-tag">Concepção</span>
+              <h2>Arquitetura da Solução e Modelo de Negócio</h2>
+              <p class="lead">
+                Validação técnica cruzando geolocalização, registro fotográfico
+                e as APIs oficiais da EMTU e SPTrans.
+              </p>
+              <p>
+                A UrbanLink valida cada trajeto combinando três camadas: foto do
+                interior do veículo, geolocalização em tempo real e cruzamento
+                com os horários reais das linhas via APIs externas. Trajetos
+                validados geram Créditos Ecoa proporcionais à distância
+                percorrida, resgatáveis em passagens, cashback e descontos em
+                parceiros. A receita vem do patrocínio ESG de empresas que
+                financiam as recompensas em troca de métricas concretas de
+                impacto ambiental.
+              </p>
+            </article>
+
+            <article
+              id="panel-piloto"
+              role="tabpanel"
+              aria-labelledby="tab-piloto"
+              class="detail-content"
+            >
+              <span class="detail-tag">Próximo passo</span>
+              <h2>Piloto na Região Metropolitana de SP</h2>
+              <p class="lead">
+                Validação com usuários reais em uma linha de ônibus integrada à
+                API da SPTrans, com foco em engajamento e eficácia do
+                antifraude.
+              </p>
+              <p>
+                O piloto será conduzido em uma linha específica da RMSP, com um
+                grupo controlado de usuários da SoulUp. Os objetivos são validar
+                a taxa de engajamento com o sistema de recompensas, testar a
+                eficácia do antifraude em condições reais e medir o interesse de
+                empresas parceiras no modelo de patrocínio ESG antes de escalar
+                para outras linhas e cidades.
+              </p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="timeline-detail-panel">
-          <article id="panel-origem" role="tabpanel" aria-labelledby="tab-origem" class="detail-content active">
-            <span class="detail-tag">Origem</span>
-            <h2>Demanda detalhada da SoulUp</h2>
-            <p class="lead">
-              Análise aprofundada sobre como a vertical de mobilidade
-              sustentável se tornou prioridade estratégica.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              itaque at dicta fugiat ex voluptatibus accusantium inventore ab
-              cupiditate fuga aliquid ratione nam, eligendi dolores eum minus
-              tempora eius ducimus! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Optio itaque at dicta fugiat ex voluptatibus
-            </p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur,</li>
-              <li>Lorem ipsum dolor sit amet consectetur,</li>
-              <li>Lorem ipsum dolor sit amet consectetur,</li>
-            </ul>
-          </article>
+      <aside aria-labelledby="cta-title">
+        <div class="cta-container">
+          <div class="cta-text-content">
+            <h2 id="cta-title">Faça parte da mudança</h2>
+            <p>Acumule pontos e ajude a transformar a mobilidade urbana</p>
+          </div>
+          <a href="#cadastro" class="cta-button">Cadastre-se agora</a>
+        </div>
+      </aside>
+    </main>
 
-          <article id="panel-pesquisa" role="tabpanel" aria-labelledby="tab-pesquisa" class="detail-content">
-            <span class="detail-tag">Pesquisa</span>
-            <h2>Entendimento Profundo do Problema</h2>
-            <p class="lead">
-              Dados coletados e análises de mercado sobre o transporte público
-              no Brasil.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              itaque at dicta fugiat ex voluptatibus accusantium inventore ab
-              cupiditate fuga aliquid ratione nam, eligendi dolores eum minus
-              tempora eius ducimus! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Optio itaque at dicta fugiat ex voluptatibus
-            </p>
-          </article>
-
-          <article id="panel-concepcao" role="tabpanel" aria-labelledby="tab-concepcao" class="detail-content">
-            <span class="detail-tag">Concepção</span>
-            <h2>Arquitetura da Solução e Modelo de Negócio</h2>
-            <p class="lead">
-              A validação técnica cruzando dados de geolocalização e as APIs
-              oficiais da EMTU e SPTrans.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              itaque at dicta fugiat ex voluptatibus accusantium inventore ab
-              cupiditate fuga aliquid ratione nam, eligendi dolores eum minus
-              tempora eius ducimus! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Optio itaque at dicta fugiat ex voluptatibus
-            </p>
-          </article>
-
-          <article id="panel-piloto" role="tabpanel" aria-labelledby="tab-piloto" class="detail-content">
-            <span class="detail-tag">Próximo passo</span>
-            <h2>O Plano do Piloto Operacional</h2>
-            <p class="lead">
-              Metodologia de testes práticos com passageiros reais na Região
-              Metropolitana de São Paulo.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              itaque at dicta fugiat ex voluptatibus accusantium inventore ab
-              cupiditate fuga aliquid ratione nam, eligendi dolores eum minus
-              tempora eius ducimus! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Optio itaque at dicta fugiat ex voluptatibus
-            </p>
-          </article>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul class="footer-ul">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="quemSomos.html">Quem Somos</a></li>
+            <li>
+              <a href="sobre.html" id="active_link_footer">Sobre</a>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <img
+            src="../assets/logosUrbanLink/logo_UrbanLink_branca.svg"
+            alt="Logo da UrbanLink"
+          />
+          <p>Trazendo sustentabilidade para a sua jornada diária.</p>
         </div>
       </div>
-    </section>
-
-    <aside aria-labelledby="cta-title">
-      <div class="cta-container">
-        <div class="cta-text-content">
-          <h2 id="cta-title">Faça parte da mudança</h2>
-          <p>Acumule pontos e ajude a transformar a mobilidade urbana</p>
-        </div>
-        <a href="#cadastro" class="cta-button">Cadastre-se agora</a>
+      <hr />
+      <div class="footer-bottom">
+        <p>&copy; 2026 UrbanLink</p>
+        <p>Todos os direitos reservados.</p>
       </div>
-    </aside>
-  </main>
+    </footer>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <h4>Navegação</h4>
-        <ul class="footer-ul">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="quemSomos.html">Quem Somos</a></li>
-          <li>
-            <a href="sobre.html" id="active_link_footer">Sobre</a>
-          </li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
-      <div class="footer-info">
-        <img src="../assets/logosUrbanLink/logo_UrbanLink_branca.svg" alt="Logo da UrbanLink" />
-        <p>Trazendo sustentabilidade para a sua jornada diária.</p>
-      </div>
-    </div>
-    <hr />
-    <div class="footer-bottom">
-      <p>&copy; 2026 UrbanLink</p>
-      <p>Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="../js/tabCardMenu.js"></script>
-  <script src="../js/sobre.js"></script>
-  <script src="../js/script.js"></script>
-</body>
-
+    <script src="../js/tabCardMenu.js"></script>
+    <script src="../js/sobre.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

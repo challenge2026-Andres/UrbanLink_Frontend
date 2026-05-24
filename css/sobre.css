@@ -162,6 +162,7 @@
 
 .stats-grid {
     display: flex;
+    gap: 10px;
     justify-content: space-around;
     width: 100%;
 }
