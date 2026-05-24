@@ -115,6 +115,20 @@
     filter: brightness(0) invert(1);
 }
 
+.team-rm,
+.modal-rm {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-blue-primary);
+    margin-bottom: 0.7rem;
+}
+
+.modal-socials {
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+
 .modal-overlay {
     position: fixed;
     inset: 0;
