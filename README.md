@@ -2,7 +2,11 @@
 
 UrbanLink e uma proposta de solucao front-end para a SoulUp, criada para incentivar o uso do transporte publico por meio de pontos, vouchers e metricas de impacto ambiental. A plataforma simula uma jornada em que o usuario valida trajetos sustentaveis, acumula Creditos Ecoa e acompanha beneficios ligados a mobilidade urbana.
 
-![Banner da UrbanLink](assets/banners/sobre.png)
+![Banner da UrbanLink](assets/logosUrbanLink/logo_UrbanLink.svg)
+
+## Demonstração
+
+https://github.com/user-attachments/assets/28df82cd-30e5-4134-8c1f-3da1121e7975
 
 ## Objetivo
 
@@ -75,11 +79,11 @@ UrbanLink_Frontend/
 
 | Nome | RM | Turma | GitHub | LinkedIn |
 | --- | --- | --- | --- | --- |
-| Felipe Cabral | 569432 | 1TDS | [Felipecmf](https://github.com/Felipecmf) | [LinkedIn](https://www.linkedin.com/in/felipe-fernandes-126887266/) |
-| Felipe Falcao | 571956 | 1TDS | [fefalcaoo](https://github.com/fefalcaoo) | [LinkedIn](https://www.linkedin.com/in/felipe-falc%C3%A3o-ferreira-529714278/) |
-| Rafael Andres | 573700 | 1TDS | [Andresxxyz](https://github.com/Andresxxyz) | [LinkedIn](https://www.linkedin.com/in/rafaandres/) |
-| Vitor Reis | 573315 | 1TDS | [vtrzxy](https://github.com/vtrzxy) | [LinkedIn](https://www.linkedin.com/in/vi-reis/) |
-| Vitor Rodrigues | 571297 | 1TDS | [vitorf8](https://github.com/vitorf8) | [LinkedIn](https://www.linkedin.com/in/vitor-rodrigues-ferreira-22048a30b/) |
+| Felipe Cabral | 569432 | 1TDSPX | [Felipecmf](https://github.com/Felipecmf) | [LinkedIn](https://www.linkedin.com/in/felipe-fernandes-126887266/) |
+| Felipe Falcao | 571956 | 1TDSPX | [fefalcaoo](https://github.com/fefalcaoo) | [LinkedIn](https://www.linkedin.com/in/felipe-falc%C3%A3o-ferreira-529714278/) |
+| Rafael Andres | 573700 | 1TDSPX | [Andresxxyz](https://github.com/Andresxxyz) | [LinkedIn](https://www.linkedin.com/in/rafaandres/) |
+| Vitor Reis | 573315 | 1TDSPX | [vtrzxy](https://github.com/vtrzxy) | [LinkedIn](https://www.linkedin.com/in/vi-reis/) |
+| Vitor Rodrigues | 571297 | 1TDSPX | [vitorf8](https://github.com/vitorf8) | [LinkedIn](https://www.linkedin.com/in/vitor-rodrigues-ferreira-22048a30b/) |
 
 ## Como Executar
 
@@ -89,6 +93,3 @@ Abra o arquivo `index.html` em um navegador ou use a extensao Live Server do VS 
 
 Repositorio publico: [UrbanLink_Frontend](https://github.com/challenge2026-Andres/UrbanLink_Frontend)
 
-## Contato
-
-Duvidas sobre o projeto podem ser enviadas pela pagina `pages/contato.html`, que inclui formulario com validacao de nome, e-mail, assunto e mensagem.
