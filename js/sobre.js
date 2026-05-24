@@ -1,12 +1,10 @@
-function switchTimelineTab(event, panelId) {
-    event.preventDefault();
+function switchTimelineTab(clickedItem, panelId) {
+    // Alterna o item da timeline e o painel descritivo correspondente.
     const items = document.querySelectorAll('.timeline-item');
     items.forEach(item => {
         item.classList.remove('active');
         item.setAttribute('aria-selected', 'false');
     });
-
-    const clickedItem = event.currentTarget;
     clickedItem.classList.add('active');
     clickedItem.setAttribute('aria-selected', 'true');
 
@@ -20,3 +18,13 @@ function switchTimelineTab(event, panelId) {
         targetPanel.classList.add('active');
     }
 }
+
+document.querySelectorAll('.timeline-item').forEach((item) => {
+    const panelId = item.dataset.panel;
+
+    item.addEventListener('mouseenter', () => switchTimelineTab(item, panelId));
+    item.addEventListener('click', (event) => {
+        event.preventDefault();
+        switchTimelineTab(item, panelId);
+    });
+});
