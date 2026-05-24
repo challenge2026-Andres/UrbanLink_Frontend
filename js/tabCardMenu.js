@@ -1,4 +1,4 @@
-// Tabs + carrossel da section "como-funciona"
+// Sincroniza as tabs com o carrossel da secao "Como funciona".
 const sectionsComoFunciona = document.querySelectorAll(".como-funciona");
 
 sectionsComoFunciona.forEach((section) => {
@@ -49,6 +49,7 @@ sectionsComoFunciona.forEach((section) => {
   }
 
   function pegarCardMaisProximo() {
+    // Mantem a tab ativa alinhada ao card visivel durante o scroll manual.
     const scrollAtual = cardsContainer.scrollLeft;
     const scrollMaximo = cardsContainer.scrollWidth - cardsContainer.clientWidth;
 
