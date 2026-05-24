@@ -162,6 +162,7 @@
 
 .stats-grid {
     display: flex;
+    gap: 10px;
     justify-content: space-around;
     width: 100%;
 }
@@ -255,7 +256,7 @@
     margin-bottom: 0;
 }
 
-.timeline-item:hover {
+.timeline-card:hover {
     transform: translateX(4px);
 }
 
@@ -450,7 +451,7 @@
 /* RESPONSIVIDADE SOBRE */
 
 /* Notebook menor */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .como-funciona {
         padding: 5rem 0 5rem 4rem;
     }
@@ -485,7 +486,7 @@
 }
 
 /* Tablet */
-@media (max-width: 900px) {
+@media (max-width: 1168px) {
     .como-funciona {
         min-height: auto;
         padding: 4rem 0 4rem 2rem;
