@@ -1,93 +1,145 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/logo_UrbanLink_branca.svg"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="../assets/logo_UrbanLink_branca.svg" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-  <!-- Estilos padrao -->
-  <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/quemSomos.css" />
 
-  <!-- Estilos pagina quemSomos.html -->
-  <link rel="stylesheet" href="../css/quemSomos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google fonts: Poppins e Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <title>Quem Somos</title>
+  </head>
+  <body>
 
-  <title>Quem Somos</title>
-</head>
+    <div class="gradient-wrapper">
 
-<body>
-  <nav>
-    <a class="logo" href="index.html">
-      <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
-    </a>
-
-
-    <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir menu">
-      ☰
-    </button>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="quemSomos.html" id="active_link">Quem Somos</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-
-    <div class="nav-buttons">
-      <button class="btn-branco">Cadastre-se</button>
-      <button class="btn-vazado">Entre</button>
-    </div>
-  </nav>
-
-  <header>
-    <div class="texto-header">
-      <h1>Quem Somos?</h1>
-
-    </div>
-    <div class="logo-header">
-      <img src="../assets/logo_UrbanLink.svg" alt="Logo grande do UrbanLink" />
-    </div>
-  </header>
-  <main>
-    <section class="quem-somos">
-      <h2>Quem Somos</h2>
-      <p>
-
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <h4>Navegação</h4>
-        <ul class="footer-ul">
+      <nav>
+        <a class="logo" href="index.html">
+          <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
+        </a>
+  
+        <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="quemSomos.html" id="active_link">Quem Somos</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
-      </div>
-      <div class="footer-info">
-        <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
-        <p>Trazendo sustentabilidade para a sua jornada diária.</p>
-      </div>
-    </div>
-    <hr />
-    <div class="footer-bottom">
-      <p>&copy; 2026 UrbanLink</p>
-      <p>Todos os direitos reservados.</p>
-    </div>
-  </footer>
-  <script src="../js/script.js"></script>
-</body>
+  
+        <div class="nav-buttons">
+          <button class="btn-branco">Cadastre-se</button>
+          <button class="btn-vazado">Entre</button>
+        </div>
+      </nav>
 
-</html>
+      <header>
+        <div class="texto-header">
+          <h1>Quem Somos?</h1>
+          <p>Somos estudantes apaixonados por tecnologia e mobilidade urbana,
+          unidos para transformar engajamento sustentável em soluções reais para as cidades.</p>
+        </div>
+        <div class="logo-header">
+          <img src="../assets/logo_UrbanLink.svg" alt="Logo grande do UrbanLink" />
+        </div>
+      </header>
+    
+      <main>
+        <section class="quem-somos">
+          <h2>Conheça o nosso Time!</h2>
+    
+          <div class="team-cards-container">
+    
+            <article class="team-card" onclick="abrirModal('Felipe Falcão', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/FelipeFalcão.jpeg')">
+              <div class="team-card-avatar">
+                <img src="../assets/FelipeFalcão.jpeg" alt="Foto do Felipe Falcão" />
+              </div>
+              <div class="team-card-info">
+                <h3>Felipe Falcão</h3>
+                <span class="team-role">Desenvolvedor</span>
+                <p>Responsável pelo desenvolvimento.</p>
+              </div>
+            </article>
+    
+            <article class="team-card" onclick="abrirModal('Rafael Andres', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/RafaelAndres.jpg')">
+              <div class="team-card-avatar">
+                <img src="../assets/RafaelAndres.jpg" alt="Foto do Rafael Andres" />
+              </div>
+              <div class="team-card-info">
+                <h3>Rafael Andres</h3>
+                <span class="team-role">Desenvolvedor</span>
+                <p>Responsável pelo desenvolvimento.</p>
+              </div>
+            </article>
+    
+            <article class="team-card" onclick="abrirModal('Vitor Reis', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/VitorReis copy.jpg')">
+              <div class="team-card-avatar">
+                <img src="../assets/VitorReis copy.jpg" alt="Foto do Vitor Reis" />
+              </div>
+              <div class="team-card-info">
+                <h3>Vitor Reis</h3>
+                <span class="team-role">Desenvolvedor</span>
+                <p>Responsável pelo desenvolvimento.</p>
+              </div>
+            </article>
+    
+            <article class="team-card" onclick="abrirModal('Felipe Cabral', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/FelipeCabral.jpg')">
+              <div class="team-card-avatar">
+                <img src="../assets/FelipeCabral.jpg" alt="Foto do Felipe Cabral" />
+              </div>
+              <div class="team-card-info">
+                <h3>Felipe Cabral</h3>
+                <span class="team-role">Desenvolvedor</span>
+                <p>Responsável pelo desenvolvimento.</p>
+              </div>
+            </article>
+    
+            <article class="team-card" onclick="abrirModal('Vitor Rodrigo', 'Desenvolvedor', 'Arquitetura e soluções de back-end.', '../assets/VitorRodrigo.jpg')">
+              <div class="team-card-avatar">
+                <img src="../assets/VitorRodrigo.jpg" alt="Foto do Vitor Rodrigoo" />
+              </div>
+              <div class="team-card-info">
+                <h3>Vitor Rodrigo</h3>
+                <span class="team-role">Desenvolvedor</span>
+                <p>Responsável pelo desenvolvimento.</p>
+              </div>
+            </article>
+    
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul class="footer-ul">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="quemSomos.html" id="active_link">Quem Somos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <img src="../assets/logo_UrbanLink_branca.svg" alt="logo da UrbanLink" />
+          <p>Trazendo sustentabilidade para a sua jornada diária.</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>&copy; 2026 UrbanLink</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
