@@ -5,6 +5,7 @@ const navLinks = document.getElementById("nav-links");
 if (menuHamburguer && navLinks) {
   menuHamburguer.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    menuHamburguer.classList.toggle("active");
 
     if (navLinks.classList.contains("active")) {
       menuHamburguer.textContent = "×";

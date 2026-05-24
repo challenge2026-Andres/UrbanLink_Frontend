@@ -449,8 +449,9 @@ footer hr {
         display: block;
     }
 
+    /* pesquisa para saber como faz animacaozinha de menu "crescendo"  */
     .nav-links {
-        display: none;
+        display: flex;
         position: absolute;
         top: 100%;
         left: 0;
@@ -460,12 +461,20 @@ footer hr {
         flex-direction: column;
         align-items: center;
         gap: 1.2rem;
-        padding: 1.5rem 0;
         z-index: 10;
+
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+
+        transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.3s ease;
     }
 
     .nav-links.active {
-        display: flex;
+        max-height: 320px;
+        opacity: 1;
+        padding: 1.5rem 0;
     }
 
     .texto-header h1 {
