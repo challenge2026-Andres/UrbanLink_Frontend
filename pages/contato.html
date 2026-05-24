@@ -68,13 +68,13 @@
   <main class="contato-main">
     <section class="contato-section">
       <div class="contato-intro">
-        <h1>Fale Conosco</h1>
+        <h2>Fale Conosco</h2>
         <p>Tem dúvidas sobre o funcionamento do app ou quer sugerir parcerias sustentáveis para a UrbanLink? Deixe sua
           mensagem abaixo!</p>
       </div>
 
       <div class="form-container">
-        <form id="form-contato">
+        <form id="form-contato" novalidate>
           <div class="form-group">
             <label for="nome">Nome Completo <span class="texto-vermelho">*</span></label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
@@ -84,6 +84,7 @@
           <div class="form-group">
             <label for="email">E-mail <span class="texto-vermelho">*</span></label>
             <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+            <span id="email-message"></span>
           </div>
 
           <div class="form-group">
@@ -95,6 +96,7 @@
               <option value="parceria">Parcerias de Mobilidade</option>
               <option value="sugestao">Sugestões / Outros</option>
             </select>
+            <span id="assunto-message"></span>
           </div>
 
           <div class="form-group">
@@ -102,7 +104,7 @@
             <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva detalhadamente o que precisa..."
               required></textarea>
 
-            <span id="message"></span>
+            <span id="mensagem-message"></span>
           </div>
 
           <button type="submit" id="btn-enviar" class="btn-azul">Enviar Mensagem</button>

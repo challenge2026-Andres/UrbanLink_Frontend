@@ -1,4 +1,4 @@
-// FAQ accordion
+// Abre uma resposta do FAQ por vez para manter a leitura organizada.
 const faqCards = document.querySelectorAll(".faq-card");
 
 faqCards.forEach((card) => {
@@ -17,7 +17,7 @@ faqCards.forEach((card) => {
 
         if (!estaAberto) {
             card.classList.add("active");
-            icone.textContent = "+";
+            icone.textContent = "-";
         }
     });
 });
