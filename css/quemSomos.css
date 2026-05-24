@@ -83,6 +83,38 @@
     border-radius: 50%;
 }
 
+.team-socials {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.team-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-bg-main);
+    border: 1px solid #00000018;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.team-socials a:hover {
+    background-color: var(--color-blue-primary);
+    transform: translateY(-2px);
+}
+
+.team-socials img {
+    width: 18px;
+    height: 18px;
+}
+
+.team-socials a:hover img {
+    filter: brightness(0) invert(1);
+}
+
 .modal-overlay {
     position: fixed;
     inset: 0;
