@@ -2,7 +2,7 @@
 
 UrbanLink e uma proposta de solucao front-end para a SoulUp, criada para incentivar o uso do transporte publico por meio de pontos, vouchers e metricas de impacto ambiental. A plataforma simula uma jornada em que o usuario valida trajetos sustentaveis, acumula Creditos Ecoa e acompanha beneficios ligados a mobilidade urbana.
 
-![Banner da UrbanLink](assets/banners/sobre.png)
+![Banner da UrbanLink](assets\logosUrbanLink\logo_UrbanLink.svg)
 
 ## Objetivo
 
