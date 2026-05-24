@@ -1,13 +1,16 @@
 .quem-somos {
-    background: transparent;
     padding: 5rem 10rem;
     padding-bottom: 7rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quem-somos h2 {
     font-size: var(--font-size-title);
     margin-bottom: 1rem;
-    color: var(--color-text-light);
+    color: var(--color-text-main);
 }
 
 .team-cards-container {
@@ -33,6 +36,7 @@
 .team-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(74, 178, 74, 0.18);
+    cursor: pointer;
 }
 
 .team-card-avatar {
@@ -50,7 +54,7 @@
 }
 
 .team-card-info h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 0.3rem;
     color: var(--color-text-main);
 }
