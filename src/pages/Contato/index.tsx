@@ -93,7 +93,7 @@ export default function Contato() {
                   {...register('assunto', { required: 'Selecione um assunto.' })}
                 >
                   <option value="" disabled>
-                    Selecione uma opção...
+                    Selecione uma opção....
                   </option>
                   <option value="duvida">Dúvidas sobre Pontuações</option>
                   <option value="suporte">Suporte com Vouchers</option>
